@@ -107,7 +107,7 @@ This is an advanced gems bot script.
 - <code>!CANCEL (OFFERID)</code> - Cancel a trade offer. 
 - <code>!ROLLBACK (OFFERID)</code> - Rollback a trade. 
 - <code>!RELOAD</code> - Reload Inventory. 
-- <code>!PROFIT</code> - Shows bot transactions this month. 
+- <code>!PROFIT (DAILY / MONTHLY / YEARLY)</code> - Shows information about transactions made by the bot. 
 - <code>!AUTHCODE</code> - Shows auth code. 
 - <code>!BROADCAST (message)</code> - Send a message to all friends in the friends list. 
 - <code>!DIE</code> - Turn off the bot. 

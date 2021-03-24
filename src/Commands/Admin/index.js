@@ -63,7 +63,7 @@ function admin(sender, msg, client, users, community, manager) {
       DIE(sender, client, users);
       break;
     case '!PROFIT':
-      PROFIT(sender, client, users);
+      PROFIT(sender, msg, client, users);
       break;
     case '!RELOAD':
       RELOAD(sender, client, users, community);

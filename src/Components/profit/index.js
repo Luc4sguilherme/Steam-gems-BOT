@@ -1,59 +1,19 @@
 const fs = require('fs');
+const _ = require('lodash');
+const moment = require('moment');
 
-const utils = require('../Utils');
-const log = require('./log');
+const utils = require('../../Utils');
+const log = require('../log');
+const Profit = require('./constants/profit');
 
-const initialize = () => {
-  if (
-    !fs.existsSync(
-      `./Data/History/Profit/${`0${new Date().getMonth() + 1}`.slice(
-        -2
-      )}-${new Date().getFullYear()}.json`
-    )
-  ) {
-    const profit = {
-      totaltrades: 0,
-      status: {
-        csgo: 0,
-        gems: 0,
-        hydra: 0,
-        tf: 0,
-      },
-      sell: {
-        csgo: {
-          gems: 0,
-          currency: 0,
-        },
-        hydra: {
-          gems: 0,
-          currency: 0,
-        },
-        tf: {
-          gems: 0,
-          currency: 0,
-        },
-      },
-      buy: {
-        csgo: {
-          gems: 0,
-          currency: 0,
-        },
-        hydra: {
-          gems: 0,
-          currency: 0,
-        },
-        tf: {
-          gems: 0,
-          currency: 0,
-        },
-      },
-    };
-
+const init = (period) => {
+  if (!fs.existsSync(`./Data/History/Profit/${period}.json`)) {
     fs.writeFile(
-      `./Data/History/Profit/${`0${new Date().getMonth() + 1}`.slice(
-        -2
-      )}-${new Date().getFullYear()}.json`,
-      JSON.stringify(profit),
+      `./Data/History/Profit/${period}.json`,
+      JSON.stringify(Profit),
+      {
+        flags: 'w',
+      },
       (ERR) => {
         if (ERR) {
           log.error(`An error occurred while writing profit file: ${ERR}`);
@@ -63,24 +23,37 @@ const initialize = () => {
   }
 };
 
-const read = async () => {
+const read = async (period) => {
   try {
-    initialize();
+    init(period);
+
     return JSON.parse(
-      await utils.readFileAsync(
-        `./Data/History/Profit/${`0${new Date().getMonth() + 1}`.slice(
-          -2
-        )}-${new Date().getFullYear()}.json`
-      )
+      await utils.readFileAsync(`./Data/History/Profit/${period}.json`)
     );
   } catch (error) {
     throw new Error(error);
   }
 };
 
+const write = async (profit, period) => {
+  const data = await read(period);
+  const add = (a, b) => _.defaultTo(_.add(a, b), undefined);
+  const profited = _.mergeWith({}, data, profit, add);
+
+  fs.writeFile(
+    `./Data/History/Profit/${period}.json`,
+    JSON.stringify(profited),
+    (ERR) => {
+      if (ERR) {
+        log.error(`An error occurred while writing profit file: ${ERR}`);
+      }
+    }
+  );
+};
+
 const calculate = async (offer) => {
   try {
-    const profit = await read();
+    const profit = _.cloneDeep(Profit);
 
     if (offer.data('commandused').search(/BUY/) !== -1) {
       profit.totaltrades += 1;
@@ -124,17 +97,10 @@ const calculate = async (offer) => {
         profit.status.gems += parseInt(offer.data('amountofgems'), 10);
       }
     }
-    fs.writeFile(
-      `./Data/History/Profit/${`0${new Date().getMonth() + 1}`.slice(
-        -2
-      )}-${new Date().getFullYear()}.json`,
-      JSON.stringify(profit),
-      (ERR) => {
-        if (ERR) {
-          log.error(`An error occurred while writing profit file: ${ERR}`);
-        }
-      }
-    );
+
+    write(profit, `Daily/${moment().format('DD-MM-YYYY')}`);
+    write(profit, `Monthly/${moment().format('MM-YYYY')}`);
+    write(profit, `Yearly/${moment().format('YYYY')}`);
   } catch (error) {
     log.error(`An error occurred while getting profit file: ${error}`);
   }
