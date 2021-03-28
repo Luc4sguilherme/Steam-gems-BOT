@@ -4,7 +4,7 @@
 /* eslint-disable no-labels */
 
 const axios = require('axios');
-const fs = require('fs');
+const fs = require('graceful-fs');
 const _ = require('lodash');
 const util = require('util');
 

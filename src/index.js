@@ -1,6 +1,6 @@
 require('./Components/ErrorHandle/configErrorHandle').validate();
 
-const fs = require('fs');
+const fs = require('graceful-fs');
 const moment = require('moment');
 const TradeOfferManager = require('steam-tradeoffer-manager');
 const SteamUser = require('steam-user');
