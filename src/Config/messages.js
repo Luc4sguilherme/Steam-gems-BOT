@@ -380,7 +380,7 @@ module.exports = {
           RU: 'Вот {CSGO} ключ(и).',
           ES: 'Aquí hay {CSGO} Llave(s).',
           CN: '这是{CSGO}把钥匙。',
-          FR: 'Voici {CSGO} Clés(s).',
+          FR: 'Voici {CSGO} Clé(s).',
           JA: 'ここに{CSGO}個の鍵があります。',
           DE: 'Hier sind {CSGO} Schlüssel.',
         },
@@ -390,7 +390,7 @@ module.exports = {
           RU: 'Вот {HYDRA} ключ(и).',
           ES: 'Aquí hay {HYDRA} Llave(s).',
           CN: '这是{HYDRA}把钥匙。',
-          FR: 'Voici {HYDRA} Clés(s).',
+          FR: 'Voici {HYDRA} Clé(s).',
           JA: 'ここに{HYDRA}個の鍵があります。',
           DE: 'Hier sind {HYDRA} Schlüssel.',
         },
@@ -400,7 +400,7 @@ module.exports = {
           RU: 'Вот {TF} ключ(и).',
           ES: 'Aquí hay {TF} Llave(s).',
           CN: '这是{TF}把钥匙。',
-          FR: 'Voici {TF} Clés(s).',
+          FR: 'Voici {TF} Clé(s).',
           JA: 'ここに{TF}個の鍵があります。',
           DE: 'Hier sind {TF} Schlüssel.',
         },
@@ -937,7 +937,7 @@ module.exports = {
       RU: '  • {STATUS} CS:GO ключ(ей): {AMOUNT} \n',
       ES: '  • {STATUS} de llave(s) CS:GO: {AMOUNT} \n',
       CN: '  •《反恐精英：全球攻势》钥匙{STATUS}：{AMOUNT} \n',
-      FR: '  • {STATUS} des clés(s) CS:GO: {AMOUNT} \n',
+      FR: '  • {STATUS} des clé(s) CS:GO: {AMOUNT} \n',
       JA: '  • CS:GOキー{STATUS}：{AMOUNT} \n',
       DE: '  • {STATUS} von CS:GO-Schlüssel: {AMOUNT} \n',
     },
@@ -947,7 +947,7 @@ module.exports = {
       RU: '  • {STATUS} Гидра ключ(ей): {AMOUNT} \n',
       ES: '  • {STATUS} de llave(s) Hydra: {AMOUNT} \n',
       CN: '  • 九头蛇钥匙{STATUS}：{AMOUNT} \n',
-      FR: '  • {STATUS} des clés(s) Hydra: {AMOUNT} \n',
+      FR: '  • {STATUS} des clé(s) Hydra: {AMOUNT} \n',
       JA: '  • Hydraキー{STATUS}：{AMOUNT} \n',
       DE: '  • {STATUS} von Hydra-Schlüssel: {AMOUNT} \n',
     },
@@ -957,7 +957,7 @@ module.exports = {
       RU: '  • {STATUS} TF2 ключ(ей): {AMOUNT} \n',
       ES: '  • {STATUS} de llave(s) TF2: {AMOUNT} \n',
       CN: '  • 团队要塞2钥匙{STATUS}：{AMOUNT} \n',
-      FR: '  • {STATUS} des clés(s) TF2: {AMOUNT} \n',
+      FR: '  • {STATUS} des clé(s) TF2: {AMOUNT} \n',
       JA: '  • TF2キー{STATUS}：{AMOUNT} \n',
       DE: '  • {STATUS} von TF2-Schlüssel: {AMOUNT} \n',
     },
@@ -1096,6 +1096,22 @@ module.exports = {
           '  • {GEMS5} edelstein(e) für {HYDRABUY} HYDRA-Schlüssel \n' +
           '  • {GEMS6} edelstein(e) für {TFBUY} TF2-Schlüssel \n',
       },
+    },
+    ERROR: {
+      EN: 'An error occurred while getting the profit. Please try again later.',
+      PT:
+        'Ocorreu um erro ao obter o lucro. Por favor, tente novamente mais tarde.',
+      RU:
+        'Произошла ошибка при получении прибыли. Пожалуйста, повторите попытку позже.',
+      ES:
+        'Se produjo un error al obtener la ganancia. Por favor, inténtelo de nuevo más tarde.',
+      CN: '获取利润时发生错误。 请稍后再试。',
+      FR:
+        "Une erreur s'est produite lors de l'obtention du profit. Veuillez réessayer plus tard.",
+      JA:
+        '利益を得ている間にエラーが発生しました。 後でもう一度やり直してください。',
+      DE:
+        'Beim Abrufen des Gewinns ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.',
     },
   },
   RESTART: {

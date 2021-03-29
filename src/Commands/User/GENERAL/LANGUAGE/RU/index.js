@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('graceful-fs');
 
 const log = require('../../../../../Components/log');
 const chatMessage = require('../../../../../Components/message');

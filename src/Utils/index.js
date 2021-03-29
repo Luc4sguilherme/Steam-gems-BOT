@@ -4,7 +4,7 @@
 /* eslint-disable no-labels */
 
 const axios = require('axios');
-const fs = require('fs');
+const fs = require('graceful-fs');
 const _ = require('lodash');
 const util = require('util');
 
@@ -15,6 +15,7 @@ const rates = require('../Config/rates.js');
 const utils = {};
 
 utils.readFileAsync = util.promisify(fs.readFile);
+utils.writeFileAsync = util.promisify(fs.writeFile);
 
 utils.timeZone = () => {
   let timezone;
