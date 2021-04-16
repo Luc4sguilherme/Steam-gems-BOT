@@ -6,6 +6,7 @@ const acceptedCurrencies = require('../../../../Config/currencies');
 const main = require('../../../../Config/main');
 const messages = require('../../../../Config/messages');
 const rates = require('../../../../Config/rates');
+const utils = require('../../../../Utils');
 
 module.exports = (sender, msg, client, users, manager) => {
   const amountofkeys = parseInt(msg.toUpperCase().replace('!BUYCSGO ', ''), 10);
@@ -13,14 +14,14 @@ module.exports = (sender, msg, client, users, manager) => {
   if (!Number.isNaN(amountofkeys) && amountofkeys > 0) {
     log.userChat(
       sender.getSteamID64(),
-      users[sender.getSteamID64()].language,
+      utils.getLanguage(sender.getSteamID64(), users),
       `[ !BUYCSGO ${amountofkeys} ]`
     );
     if (amountofkeys <= maxKeys) {
       chatMessage(
         client,
         sender,
-        messages.REQUEST[users[sender.getSteamID64()].language]
+        messages.REQUEST[utils.getLanguage(sender.getSteamID64(), users)]
       );
 
       manager.getUserInventoryContents(
@@ -47,7 +48,7 @@ module.exports = (sender, msg, client, users, manager) => {
                 client,
                 sender,
                 messages.ERROR.OUTOFSTOCK.DEFAULT.CSGO.THEM[0][
-                  users[sender.getSteamID64()].language
+                  utils.getLanguage(sender.getSteamID64(), users)
                 ]
               );
             } else {
@@ -86,12 +87,12 @@ module.exports = (sender, msg, client, users, manager) => {
                         client,
                         sender,
                         messages.ERROR.OUTOFSTOCK.DEFAULT.GEMS.US[0][
-                          users[sender.getSteamID64()].language
+                          utils.getLanguage(sender.getSteamID64(), users)
                         ]
                       );
                     } else {
                       const message = messages.TRADE.SETMESSAGE[1].CSGO[
-                        users[sender.getSteamID64()].language
+                        utils.getLanguage(sender.getSteamID64(), users)
                       ]
                         .replace('{GEMS}', amountofgems)
                         .replace('{CSGO}', amountofkeys);
@@ -116,7 +117,7 @@ module.exports = (sender, msg, client, users, manager) => {
                       client,
                       sender,
                       messages.ERROR.LOADINVENTORY.US[
-                        users[sender.getSteamID64()].language
+                        utils.getLanguage(sender.getSteamID64(), users)
                       ]
                     );
                   }
@@ -128,7 +129,7 @@ module.exports = (sender, msg, client, users, manager) => {
               client,
               sender,
               messages.ERROR.LOADINVENTORY.THEM[2][
-                users[sender.getSteamID64()].language
+                utils.getLanguage(sender.getSteamID64(), users)
               ]
             );
             log.error(
@@ -139,7 +140,7 @@ module.exports = (sender, msg, client, users, manager) => {
               client,
               sender,
               messages.ERROR.LOADINVENTORY.THEM[0][
-                users[sender.getSteamID64()].language
+                utils.getLanguage(sender.getSteamID64(), users)
               ]
             );
             log.error(
@@ -153,7 +154,7 @@ module.exports = (sender, msg, client, users, manager) => {
         client,
         sender,
         messages.ERROR.INPUT.AMOUNTOVER.CSGO[
-          users[sender.getSteamID64()].language
+          utils.getLanguage(sender.getSteamID64(), users)
         ].replace('{KEYS}', maxKeys)
       );
     }
@@ -162,7 +163,7 @@ module.exports = (sender, msg, client, users, manager) => {
       client,
       sender,
       messages.ERROR.INPUT.INVALID.CSGO[
-        users[sender.getSteamID64()].language
+        utils.getLanguage(sender.getSteamID64(), users)
       ].replace('{command}', '!BUYCSGO 1')
     );
   }
