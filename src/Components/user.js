@@ -3,6 +3,7 @@ const fs = require('graceful-fs');
 
 const main = require('../Config/main');
 const messages = require('../Config/messages');
+const utils = require('../Utils');
 const { getDefaultLanguage } = require('../Utils');
 const log = require('./log');
 const chatMessage = require('./message');
@@ -80,7 +81,9 @@ const inactive = (client, users) => {
         chatMessage(
           client,
           Object.keys(listUsers)[i],
-          messages.INACTIVE[listUsers[Object.keys(listUsers)[i]].language]
+          messages.INACTIVE[
+            utils.getLanguage(Object.keys(listUsers)[i], listUsers)
+          ]
         );
         client.removeFriend(Object.keys(listUsers)[i]);
         c.push(Object.keys(listUsers)[i]);
@@ -105,20 +108,20 @@ const spam = (client, users, userMsgs) => {
       chatMessage(
         client,
         Object.keys(userMsgs)[i],
-        messages.SPAM[0][users[Object.keys(userMsgs)[i]].language]
+        messages.SPAM[0][utils.getLanguage(Object.keys(userMsgs)[i], users)]
       );
     } else if (userMsgs[Object.keys(userMsgs)[i]] > main.maxMsgPerSec) {
       chatMessage(
         client,
         Object.keys(userMsgs)[i],
-        messages.SPAM[1][users[Object.keys(userMsgs)[i]].language]
+        messages.SPAM[1][utils.getLanguage(Object.keys(userMsgs)[i], users)]
       );
       client.removeFriend(Object.keys(userMsgs)[i]);
       for (let j = 0; j < main.admins.length; j += 1) {
         chatMessage(
           client,
           main.admins[j],
-          messages.SPAM[2][users[main.admins[j]].language].replace(
+          messages.SPAM[2][utils.getLanguage(main.admins[j], users)].replace(
             '{STEAMID64}',
             Object.keys(userMsgs)[i]
           )

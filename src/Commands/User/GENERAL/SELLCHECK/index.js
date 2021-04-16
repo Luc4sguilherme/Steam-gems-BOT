@@ -3,17 +3,18 @@ const chatMessage = require('../../../../Components/message');
 const acceptedCurrencies = require('../../../../Config/currencies');
 const messages = require('../../../../Config/messages');
 const rates = require('../../../../Config/rates');
+const utils = require('../../../../Utils');
 const { filterCommands } = require('../../../../Utils');
 
 module.exports = (sender, client, users, community) => {
   chatMessage(
     client,
     sender,
-    messages.REQUEST[users[sender.getSteamID64()].language]
+    messages.REQUEST[utils.getLanguage(sender.getSteamID64(), users)]
   );
   log.userChat(
     sender.getSteamID64(),
-    users[sender.getSteamID64()].language,
+    utils.getLanguage(sender.getSteamID64(), users),
     '[ !SELLCHECK ]'
   );
   community.getUserInventoryContents(
@@ -42,21 +43,21 @@ module.exports = (sender, client, users, community) => {
           let message = ' ';
           if (cs > 0) {
             message += messages.SELLCHECK.CURRENCIES.CSGO[
-              users[sender.getSteamID64()].language
+              utils.getLanguage(sender.getSteamID64(), users)
             ]
               .replace(/{CSGO}/g, cs)
               .replace('{GEMS1}', cs * rates.csgo.buy);
           }
           if (hydra > 0) {
             message += messages.SELLCHECK.CURRENCIES.HYDRA[
-              users[sender.getSteamID64()].language
+              utils.getLanguage(sender.getSteamID64(), users)
             ]
               .replace(/{HYDRA}/g, hydra)
               .replace('{GEMS2}', hydra * rates.hydra.buy);
           }
           if (tf > 0) {
             message += messages.SELLCHECK.CURRENCIES.TF[
-              users[sender.getSteamID64()].language
+              utils.getLanguage(sender.getSteamID64(), users)
             ]
               .replace(/{TF}/g, tf)
               .replace('{GEMS3}', tf * rates.tf.buy);
@@ -69,7 +70,7 @@ module.exports = (sender, client, users, community) => {
               client,
               sender,
               messages.ERROR.OUTOFSTOCK.DEFAULT.GEMS.THEM[0][
-                users[sender.getSteamID64()].language
+                utils.getLanguage(sender.getSteamID64(), users)
               ]
             );
             return;
@@ -78,7 +79,9 @@ module.exports = (sender, client, users, community) => {
           chatMessage(
             client,
             sender,
-            messages.SELLCHECK.RESPONSE[users[sender.getSteamID64()].language]
+            messages.SELLCHECK.RESPONSE[
+              utils.getLanguage(sender.getSteamID64(), users)
+            ]
               .replace('{GEMS}', theirGems)
               .replace('{MESSAGE}', message)
           );
@@ -87,7 +90,7 @@ module.exports = (sender, client, users, community) => {
             client,
             sender,
             messages.ERROR.OUTOFSTOCK.DEFAULT.GEMS.THEM[0][
-              users[sender.getSteamID64()].language
+              utils.getLanguage(sender.getSteamID64(), users)
             ]
           );
         }
@@ -96,7 +99,7 @@ module.exports = (sender, client, users, community) => {
           client,
           sender,
           messages.ERROR.LOADINVENTORY.THEM[2][
-            users[sender.getSteamID64()].language
+            utils.getLanguage(sender.getSteamID64(), users)
           ]
         );
         log.error(`An error occurred while getting user inventory: ${ERR}`);
@@ -105,7 +108,7 @@ module.exports = (sender, client, users, community) => {
           client,
           sender,
           messages.ERROR.LOADINVENTORY.THEM[0][
-            users[sender.getSteamID64()].language
+            utils.getLanguage(sender.getSteamID64(), users)
           ]
         );
         log.error(`An error occurred while getting user inventory: ${ERR}`);

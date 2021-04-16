@@ -161,7 +161,7 @@ utils.notifyAdmin = (client, users, offer) => {
   if (main.getTradeMessages) {
     for (let j = 0; j < main.admins.length; j += 1) {
       let msg1 = messages.TRADE.NOTIFYADMIN.DEFAULT.RESPONSE[
-        users[main.admins[j]].language
+        utils.getLanguage(main.admins[j], users)
       ]
         .replace('{COMMAND}', offer.data('commandused'))
         .replace('{ID64}', offer.partner.getSteamID64());
@@ -171,21 +171,21 @@ utils.notifyAdmin = (client, users, offer) => {
       ) {
         if (offer.data('commandused').search(/CSGO/) !== -1) {
           msg1 += messages.TRADE.NOTIFYADMIN.DEFAULT.CURRENCIES.CSGO[
-            users[main.admins[j]].language
+            utils.getLanguage(main.admins[j], users)
           ]
             .replace('{GEMS}', offer.data('amountofgems'))
             .replace('{CSGO}', offer.data('amountofkeys'));
         }
         if (offer.data('commandused').search(/HYDRA/) !== -1) {
           msg1 += messages.TRADE.NOTIFYADMIN.DEFAULT.CURRENCIES.HYDRA[
-            users[main.admins[j]].language
+            utils.getLanguage(main.admins[j], users)
           ]
             .replace('{GEMS}', offer.data('amountofgems'))
             .replace('{HYDRA}', offer.data('amountofkeys'));
         }
         if (offer.data('commandused').search(/TF/) !== -1) {
           msg1 += messages.TRADE.NOTIFYADMIN.DEFAULT.CURRENCIES.TF[
-            users[main.admins[j]].language
+            utils.getLanguage(main.admins[j], users)
           ]
             .replace('{GEMS}', offer.data('amountofgems'))
             .replace('{TF}', offer.data('amountofkeys'));
@@ -482,6 +482,9 @@ utils.getDefaultLanguage = () => {
   }
   return 'EN';
 };
+
+utils.getLanguage = (id64, users) =>
+  users[id64]?.language ?? utils.getDefaultLanguage();
 
 utils.getOfferItemInfo = (item) => {
   const {

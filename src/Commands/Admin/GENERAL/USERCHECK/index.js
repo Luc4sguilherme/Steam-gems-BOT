@@ -6,17 +6,18 @@ const chatMessage = require('../../../../Components/message');
 const relationShip = require('../../../../Components/relationShip');
 const reputation = require('../../../../Components/reputation');
 const messages = require('../../../../Config/messages');
+const utils = require('../../../../Utils');
 
 module.exports = (sender, msg, client, users, community) => {
   chatMessage(
     client,
     sender,
-    messages.REQUEST[users[sender.getSteamID64()].language]
+    messages.REQUEST[utils.getLanguage(sender.getSteamID64(), users)]
   );
   const id64 = msg.toUpperCase().replace('!USERCHECK ', '').toString();
   log.adminChat(
     sender.getSteamID64(),
-    users[sender.getSteamID64()].language,
+    utils.getLanguage(sender.getSteamID64(), users),
     `[ !USERCHECK ${id64} ]`
   );
   if (SID64REGEX.test(id64)) {
@@ -25,7 +26,7 @@ module.exports = (sender, msg, client, users, community) => {
     relationShip(client, id64, (relation) => {
       message +=
         messages.USERCHECK.RELATIONSHIP[relation][
-          users[sender.getSteamID64()].language
+          utils.getLanguage(sender.getSteamID64(), users)
         ];
     });
 
@@ -33,34 +34,34 @@ module.exports = (sender, msg, client, users, community) => {
       .then((infos) => {
         message +=
           messages.USERCHECK.REPUTATION.DEFAULT[
-            users[sender.getSteamID64()].language
+            utils.getLanguage(sender.getSteamID64(), users)
           ];
 
         if (infos.summary) {
           message +=
             messages.USERCHECK.REPUTATION[infos.summary][
-              users[sender.getSteamID64()].language
+              utils.getLanguage(sender.getSteamID64(), users)
             ];
         }
 
         if (infos.tags) {
           message +=
             messages.USERCHECK.REPUTATION[infos.tags][
-              users[sender.getSteamID64()].language
+              utils.getLanguage(sender.getSteamID64(), users)
             ];
         }
 
         if (infos.vacban) {
           message +=
             messages.USERCHECK.REPUTATION[infos.vacban][
-              users[sender.getSteamID64()].language
+              utils.getLanguage(sender.getSteamID64(), users)
             ];
         }
 
         if (infos.tradeban) {
           message +=
             messages.USERCHECK.REPUTATION[infos.tradeban][
-              users[sender.getSteamID64()].language
+              utils.getLanguage(sender.getSteamID64(), users)
             ];
         }
 
@@ -76,12 +77,12 @@ module.exports = (sender, msg, client, users, community) => {
           client,
           sender,
           messages.ERROR.LOADINVENTORY.THEM[1][
-            users[sender.getSteamID64()].language
+            utils.getLanguage(sender.getSteamID64(), users)
           ]
         );
       } else {
         message += messages.USERCHECK.INVENTORY[
-          users[sender.getSteamID64()].language
+          utils.getLanguage(sender.getSteamID64(), users)
         ]
           .replace('{CSKEYSTRADABLE}', customer.stock.csKeys.tradable)
           .replace('{HYDRAKEYSTRADABLE}', customer.stock.hydraKeys.tradable)
@@ -105,7 +106,7 @@ module.exports = (sender, msg, client, users, community) => {
       client,
       sender,
       messages.ERROR.INPUT.INVALID.STEAMID64[
-        users[sender.getSteamID64()].language
+        utils.getLanguage(sender.getSteamID64(), users)
       ]
     );
   }

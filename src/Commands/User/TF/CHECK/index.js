@@ -3,20 +3,21 @@ const chatMessage = require('../../../../Components/message');
 const main = require('../../../../Config/main');
 const messages = require('../../../../Config/messages');
 const rates = require('../../../../Config/rates');
+const utils = require('../../../../Utils');
 
 module.exports = (sender, msg, client, users) => {
   const n = parseInt(msg.toUpperCase().replace('!CHECKTF ', ''), 10);
   if (!Number.isNaN(n) && parseInt(n, 10) > 0) {
     log.userChat(
       sender.getSteamID64(),
-      users[sender.getSteamID64()].language,
+      utils.getLanguage(sender.getSteamID64(), users),
       `[ !CHECKTF ${n} ]`
     );
     if (main.maxCheck.tf >= n) {
       chatMessage(
         client,
         sender,
-        messages.CHECK.TF[users[sender.getSteamID64()].language]
+        messages.CHECK.TF[utils.getLanguage(sender.getSteamID64(), users)]
           .replace(/{TF}/g, n)
           .replace('{GEMS}', n * rates.tf.sell)
       );
@@ -25,7 +26,7 @@ module.exports = (sender, msg, client, users) => {
         client,
         sender,
         messages.ERROR.INPUT.AMOUNTOVER.TF[
-          users[sender.getSteamID64()].language
+          utils.getLanguage(sender.getSteamID64(), users)
         ].replace('{KEYS}', main.maxCheck.tf)
       );
     }
@@ -34,7 +35,7 @@ module.exports = (sender, msg, client, users) => {
       client,
       sender,
       messages.ERROR.INPUT.INVALID.TF[
-        users[sender.getSteamID64()].language
+        utils.getLanguage(sender.getSteamID64(), users)
       ].replace('{command}', '!CHECKTF 1')
     );
   }
