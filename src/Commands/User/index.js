@@ -159,7 +159,7 @@ module.exports = (sender, msg, client, users, community, manager) => {
       break;
     case parseCommand(
       input,
-      '!DE | !GERMAN | !DEUTSCHE | !ALEMÂO | !德国的语言 | !ドイツ語 | !НЕМЕЦКИЙ'
+      '!DE | !GERMAN | !DEUTSCHE | !ALEMÃO | !德国的语言 | !ドイツ語 | !НЕМЕЦКИЙ'
     ):
       DE(sender, client, users);
       break;
