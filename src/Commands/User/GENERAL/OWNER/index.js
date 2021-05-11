@@ -4,10 +4,8 @@ const main = require('../../../../Config/main');
 const utils = require('../../../../Utils');
 
 module.exports = (sender, client, users) => {
-  log.userChat(
-    sender.getSteamID64(),
-    utils.getLanguage(sender.getSteamID64(), users),
-    '[ !OWNER ]'
-  );
+  const language = utils.getLanguage(sender.getSteamID64(), users);
+
+  log.userChat(sender.getSteamID64(), language, '[ !OWNER ]');
   chatMessage(client, sender, main.owner);
 };
