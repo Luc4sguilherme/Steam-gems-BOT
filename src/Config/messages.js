@@ -1,35 +1,23 @@
 module.exports = {
   WELCOME: {
-    EN:
-      '[EN] Welcome to my Trading Service, thank you for choosing me. Quick Start: Type !HELP via SteamChat \n\n',
-    PT:
-      '[PT-BR] Bem-vindo ao meu serviço de negociação, obrigado por me escolher. Início rápido: digite !AJUDA no chat da Steam \n\n',
-    RU:
-      '[PY] Добро пожаловать в мою торговую службу, спасибо, что выбрали меня. Быстрый старт: Используй !ПОМОЩЬ \n\n',
-    ES:
-      '[ESP] Bienvenido a mi servicio comercial, gracias por elegirme. Inicio rápido: escriba !AYUDA a través de steam chat \n\n',
-    CN:
-      '[CN] 欢迎使用我的交易服务，谢谢您选择我。 快速开始：写《!救命》通过Steam聊天 \n\n',
-    FR:
-      "[FR] Bienvenue sur mon service de trading, merci de m'avoir choisi. Démarrage rapide: tapez !AIDER via Steam Chat \n\n",
-    JA:
-      '[JA] 私のトレーディングサービスへようこそ、私を選んでくれてありがとう。 クイックスタート： Steamチャットで「!助けて」と入力します \n\n',
-    DE:
-      '[DE] Willkommen bei meinem Handelsservice, danke, dass Sie sich für mich entschieden haben. Schnellstart: Geben Sie !HILFE via Steam Chat ein \n\n',
+    EN: '[EN] Welcome to my Trading Service, thank you for choosing me. Quick Start: Type !HELP via SteamChat \n\n',
+    PT: '[PT-BR] Bem-vindo ao meu serviço de negociação, obrigado por me escolher. Início rápido: digite !AJUDA no chat da Steam \n\n',
+    RU: '[PY] Добро пожаловать в мою торговую службу, спасибо, что выбрали меня. Быстрый старт: Используй !ПОМОЩЬ \n\n',
+    ES: '[ESP] Bienvenido a mi servicio comercial, gracias por elegirme. Inicio rápido: escriba !AYUDA a través de steam chat \n\n',
+    CN: '[CN] 欢迎使用我的交易服务，谢谢您选择我。 快速开始：写《!救命》通过Steam聊天 \n\n',
+    FR: "[FR] Bienvenue sur mon service de trading, merci de m'avoir choisi. Démarrage rapide: tapez !AIDER via Steam Chat \n\n",
+    JA: '[JA] 私のトレーディングサービスへようこそ、私を選んでくれてありがとう。 クイックスタート： Steamチャットで「!助けて」と入力します \n\n',
+    DE: '[DE] Willkommen bei meinem Handelsservice, danke, dass Sie sich für mich entschieden haben. Schnellstart: Geben Sie !HILFE via Steam Chat ein \n\n',
   },
   TRADEMSG: {
     EN: 'Please check your Trade and accept it to receive your Items.',
     PT: 'Por favor, verifique seu comércio e aceite-o para receber seus itens.',
-    RU:
-      'Пожалуйста, проверьте вашу сделку и примите ее, чтобы получить ваши товары.',
+    RU: 'Пожалуйста, проверьте вашу сделку и примите ее, чтобы получить ваши товары.',
     ES: 'Verifique su comercio y acéptelo para recibir sus artículos.',
     CN: '请检查您的交易并接受以接收您的物品。',
-    FR:
-      "Veuillez vérifier votre échange et l'accepter pour recevoir vos articles.",
-    JA:
-      'あなたの取引をチェックして、あなたのアイテムを受け取るためにそれを受け入れてください。',
-    DE:
-      'Bitte überprüfen Sie Ihren Handel und akzeptieren Sie ihn, um Ihre Artikel zu erhalten.',
+    FR: "Veuillez vérifier votre échange et l'accepter pour recevoir vos articles.",
+    JA: 'あなたの取引をチェックして、あなたのアイテムを受け取るためにそれを受け入れてください。',
+    DE: 'Bitte überprüfen Sie Ihren Handel und akzeptieren Sie ihn, um Ihre Artikel zu erhalten.',
   },
   COMMENT: {
     EN: '+REP | Thanks for trading with me !!',
@@ -42,40 +30,24 @@ module.exports = {
     DE: '+REP | Danke, dass du mit mir gehandelt hast !!',
   },
   INACTIVE: {
-    EN:
-      'Hi, you have been inactive on my friends list for too long. If you wish to use this bot again re-add it.',
-    PT:
-      'Olá, você está inativo na minha lista de amigos há muito tempo. Se você deseja usar este bot novamente, adicione-o novamente.',
-    RU:
-      'Привет, ты слишком долго неактивен в моем списке друзей. Если вы хотите использовать этот бот снова, добавьте его снова.',
-    ES:
-      'Hola, has estado inactivo en mi lista de amigos durante demasiado tiempo. Si desea utilizar este bot nuevamente, vuelva a agregarlo.',
-    CN:
-      '嗨，您在我的朋友清单上的活跃时间已经太久了。 如果您想再次使用该机器人，请重新添加它。',
-    FR:
-      "Bonjour, vous êtes inactif sur ma liste d'amis depuis trop longtemps. Si vous souhaitez utiliser à nouveau ce bot, ajoutez-le à nouveau.",
-    JA:
-      'こんにちは、あなたは私の友達リストであまりにも長い間非アクティブになっています。このボットを再度使用する場合は、再度追加してください。',
-    DE:
-      'Hallo, du warst zu lange auf meiner Freundesliste inaktiv. Wenn Sie diesen Bot erneut verwenden möchten, fügen Sie ihn erneut hinzu.',
+    EN: 'Hi, you have been inactive on my friends list for too long. If you wish to use this bot again re-add it.',
+    PT: 'Olá, você está inativo na minha lista de amigos há muito tempo. Se você deseja usar este bot novamente, adicione-o novamente.',
+    RU: 'Привет, ты слишком долго неактивен в моем списке друзей. Если вы хотите использовать этот бот снова, добавьте его снова.',
+    ES: 'Hola, has estado inactivo en mi lista de amigos durante demasiado tiempo. Si desea utilizar este bot nuevamente, vuelva a agregarlo.',
+    CN: '嗨，您在我的朋友清单上的活跃时间已经太久了。 如果您想再次使用该机器人，请重新添加它。',
+    FR: "Bonjour, vous êtes inactif sur ma liste d'amis depuis trop longtemps. Si vous souhaitez utiliser à nouveau ce bot, ajoutez-le à nouveau.",
+    JA: 'こんにちは、あなたは私の友達リストであまりにも長い間非アクティブになっています。このボットを再度使用する場合は、再度追加してください。',
+    DE: 'Hallo, du warst zu lange auf meiner Freundesliste inaktiv. Wenn Sie diesen Bot erneut verwenden möchten, fügen Sie ihn erneut hinzu.',
   },
   TRADEHOLD: {
-    EN:
-      "Please make sure you don't have a trade hold. If you don't own a smartphone, use SteamDesktopAuthenticator. \n\n https://help.steampowered.com/en/wizard/HelpWhyCantITrade",
-    PT:
-      'Verifique se você não possui uma proibição comercial. Se você não possui um smartphone, use SteamDesktopAuthenticator. \n\n https://help.steampowered.com/pt-br/wizard/HelpWhyCantITrade',
-    RU:
-      'Пожалуйста, убедитесь, что у вас нет удержание обменов. Если у вас нет смартфона, используйте SteamDesktopAuthenticator. \n\n https://help.steampowered.com/ru/wizard/HelpWhyCantITrade',
-    ES:
-      'Asegúrese de no tener una retenciones de intercambio. Si no tiene un teléfono inteligente, use SteamDesktopAuthenticator. \n\n https://help.steampowered.com/es/wizard/HelpWhyCantITrade',
-    CN:
-      '请确保您没有交易暂停。 如果您没有智能手机，请使用 SteamDesktopAuthenticator. \n\n https://help.steampowered.com/zh-cn/wizard/HelpWhyCantITrade',
-    FR:
-      "Veuillez vous assurer que vous n'avez pas de blocage de transaction Si vous ne possédez pas de smartphone, utilisez SteamDesktopAuthenticator. \n\n https://help.steampowered.com/fr/wizard/HelpWhyCantITrade",
-    JA:
-      'トレードホールドがないことを確認してください。 スマートフォンをお持ちでない場合は、SteamDesktopAuthenticatorをご利用ください。 \n\n https://help.steampowered.com/ja/wizard/HelpWhyCantITrade',
-    DE:
-      'Bitte stellen Sie sicher, dass Sie keinen Trade Hold haben. Wenn Sie kein Smartphone besitzen, verwenden Sie SteamDesktopAuthenticator. \n\n https://help.steampowered.com/de/wizard/HelpWhyCantITrade',
+    EN: "Please make sure you don't have a trade hold. If you don't own a smartphone, use SteamDesktopAuthenticator. \n\n https://help.steampowered.com/en/wizard/HelpWhyCantITrade",
+    PT: 'Verifique se você não possui uma proibição comercial. Se você não possui um smartphone, use SteamDesktopAuthenticator. \n\n https://help.steampowered.com/pt-br/wizard/HelpWhyCantITrade',
+    RU: 'Пожалуйста, убедитесь, что у вас нет удержание обменов. Если у вас нет смартфона, используйте SteamDesktopAuthenticator. \n\n https://help.steampowered.com/ru/wizard/HelpWhyCantITrade',
+    ES: 'Asegúrese de no tener una retenciones de intercambio. Si no tiene un teléfono inteligente, use SteamDesktopAuthenticator. \n\n https://help.steampowered.com/es/wizard/HelpWhyCantITrade',
+    CN: '请确保您没有交易暂停。 如果您没有智能手机，请使用 SteamDesktopAuthenticator. \n\n https://help.steampowered.com/zh-cn/wizard/HelpWhyCantITrade',
+    FR: "Veuillez vous assurer que vous n'avez pas de blocage de transaction Si vous ne possédez pas de smartphone, utilisez SteamDesktopAuthenticator. \n\n https://help.steampowered.com/fr/wizard/HelpWhyCantITrade",
+    JA: 'トレードホールドがないことを確認してください。 スマートフォンをお持ちでない場合は、SteamDesktopAuthenticatorをご利用ください。 \n\n https://help.steampowered.com/ja/wizard/HelpWhyCantITrade',
+    DE: 'Bitte stellen Sie sicher, dass Sie keinen Trade Hold haben. Wenn Sie kein Smartphone besitzen, verwenden Sie SteamDesktopAuthenticator. \n\n https://help.steampowered.com/de/wizard/HelpWhyCantITrade',
   },
   INVITETOGROUP: {
     INVITED: {
@@ -104,32 +76,22 @@ module.exports = {
       RU: 'При приглашении в группу steam произошла ошибка',
       ES: 'Se produjo un error al invitarte a nuestro grupo de steam',
       CN: '邀请您加入我们的Steam组时出错',
-      FR:
-        "Une erreur s'est produite lors de votre invitation à rejoindre notre groupe Steam",
+      FR: "Une erreur s'est produite lors de votre invitation à rejoindre notre groupe Steam",
       JA: '私たちのスチームグループにあなたを招待するエラーがありました',
-      DE:
-        'Es ist ein Fehler aufgetreten, der Sie zu unserer Dampfgruppe eingeladen hat',
+      DE: 'Es ist ein Fehler aufgetreten, der Sie zu unserer Dampfgruppe eingeladen hat',
     },
   },
   TRADE: {
     DONE: {
       0: {
-        EN:
-          '\n\n Thanks for trading, feel free to join our steam group. Have a nice day! \n {GROUP}',
-        PT:
-          '\n\n Obrigado pela negociação, fique à vontade para se juntar ao nosso grupo steam. Tenha um bom dia! \n {GROUP}',
-        RU:
-          '\n\n Спасибо за торговлю, не стесняйтесь присоединиться к нашей группе Steam. Хорошего дня! \n {GROUP}',
-        ES:
-          '\n\n Gracias por negociar, siéntase libre de unirse a nuestro grupo steam. ¡Que tengas un buen día! \n {GROUP}',
-        CN:
-          '\n\n 感谢您的交易，随时加入我们的Steam组。 祝你今天愉快！ \n {GROUP}',
-        FR:
-          "\n\n Merci pour le trading, n'hésitez pas à rejoindre notre groupe Steam. Bonne journée! \n {GROUP}",
-        JA:
-          '\n\n 取引してくれてありがとう、私たちのスチームグループに気軽に参加してください。 ごきげんよう！ \n {GROUP}',
-        DE:
-          '\n\n Vielen Dank für den Handel. Treten Sie unserer Steam-Gruppe bei. Einen schönen Tag noch! \n {GROUP}',
+        EN: '\n\n Thanks for trading, feel free to join our steam group. Have a nice day! \n {GROUP}',
+        PT: '\n\n Obrigado pela negociação, fique à vontade para se juntar ao nosso grupo steam. Tenha um bom dia! \n {GROUP}',
+        RU: '\n\n Спасибо за торговлю, не стесняйтесь присоединиться к нашей группе Steam. Хорошего дня! \n {GROUP}',
+        ES: '\n\n Gracias por negociar, siéntase libre de unirse a nuestro grupo steam. ¡Que tengas un buen día! \n {GROUP}',
+        CN: '\n\n 感谢您的交易，随时加入我们的Steam组。 祝你今天愉快！ \n {GROUP}',
+        FR: "\n\n Merci pour le trading, n'hésitez pas à rejoindre notre groupe Steam. Bonne journée! \n {GROUP}",
+        JA: '\n\n 取引してくれてありがとう、私たちのスチームグループに気軽に参加してください。 ごきげんよう！ \n {GROUP}',
+        DE: '\n\n Vielen Dank für den Handel. Treten Sie unserer Steam-Gruppe bei. Einen schönen Tag noch! \n {GROUP}',
       },
       1: {
         EN: '\n\n Thanks for trading. Have a nice day! \n ',
@@ -143,53 +105,35 @@ module.exports = {
       },
     },
     COUNTEROFFER: {
-      EN:
-        'You tried to send a counter offer, trade will be canceled. TradeID:{OFFERID}',
-      PT:
-        'Você tentou enviar uma contraproposta, a negociação será cancelada. TradeID:{OFFERID}',
-      RU:
-        'Вы пытались отправить встречное предложение, торговля будет отменена. TradeID:{OFFERID}',
-      ES:
-        'Intentaste enviar una contraoferta, el comercio se cancelará. TradeID:{OFFERID}',
+      EN: 'You tried to send a counter offer, trade will be canceled. TradeID:{OFFERID}',
+      PT: 'Você tentou enviar uma contraproposta, a negociação será cancelada. TradeID:{OFFERID}',
+      RU: 'Вы пытались отправить встречное предложение, торговля будет отменена. TradeID:{OFFERID}',
+      ES: 'Intentaste enviar una contraoferta, el comercio se cancelará. TradeID:{OFFERID}',
       CN: '您试图发送还价，交易将被取消。 TradeID:{OFFERID}',
-      FR:
-        "Vous avez essayé d'envoyer une contre-offre, l'échange sera annulé. TradeID:{OFFERID}",
-      JA:
-        'カウンターオファーを送信しようとすると、取引はキャンセルされます。TradeID:{OFFERID}',
-      DE:
-        'Sie haben versucht, ein Gegenangebot zu senden, der Handel wird storniert. TradeID:{OFFERID}',
+      FR: "Vous avez essayé d'envoyer une contre-offre, l'échange sera annulé. TradeID:{OFFERID}",
+      JA: 'カウンターオファーを送信しようとすると、取引はキャンセルされます。TradeID:{OFFERID}',
+      DE: 'Sie haben versucht, ein Gegenangebot zu senden, der Handel wird storniert. TradeID:{OFFERID}',
     },
     EXPIRED: {
       0: {
         EN: "You haven't accepted the Trade. Trade expired. TradeID:{OFFERID}",
-        PT:
-          'Você não aceitou o comércio. O comércio expirou. TradeID:{OFFERID}',
+        PT: 'Você não aceitou o comércio. O comércio expirou. TradeID:{OFFERID}',
         RU: 'Вы не приняли Сделку. Торговля истекла. TradeID:{OFFERID}',
         ES: 'No has aceptado el Comercio. Comercio expirado. TradeID:{OFFERID}',
         CN: '您尚未接受该交易。 交易已过期。 TradeID:{OFFERID}',
-        FR:
-          "Vous n'avez pas accepté l'échange. Le commerce a expiré. TradeID:{OFFERID}",
-        JA:
-          'あなたはその取引を受け入れませんでした。取引が期限切れになりました。TradeID:{OFFERID}',
-        DE:
-          'Sie haben den Handel nicht akzeptiert. Handel abgelaufen. TradeID:{OFFERID}',
+        FR: "Vous n'avez pas accepté l'échange. Le commerce a expiré. TradeID:{OFFERID}",
+        JA: 'あなたはその取引を受け入れませんでした。取引が期限切れになりました。TradeID:{OFFERID}',
+        DE: 'Sie haben den Handel nicht akzeptiert. Handel abgelaufen. TradeID:{OFFERID}',
       },
       1: {
-        EN:
-          'We canceled the offer it may be expired. Please try again if you wish. TradeID:{OFFERID}',
-        PT:
-          'Cancelamos a oferta pois expirou. Por favor, tente novamente se desejar. TradeID:{OFFERID}',
-        RU:
-          'Мы отменили предложение, срок действия которого истек. Пожалуйста, попробуйте еще раз, если хотите. TradeID:{OFFERID}',
-        ES:
-          'Cancelamos la oferta, puede expirar. Por favor intente nuevamente si lo desea. TradeID:{OFFERID}',
+        EN: 'We canceled the offer it may be expired. Please try again if you wish. TradeID:{OFFERID}',
+        PT: 'Cancelamos a oferta pois expirou. Por favor, tente novamente se desejar. TradeID:{OFFERID}',
+        RU: 'Мы отменили предложение, срок действия которого истек. Пожалуйста, попробуйте еще раз, если хотите. TradeID:{OFFERID}',
+        ES: 'Cancelamos la oferta, puede expirar. Por favor intente nuevamente si lo desea. TradeID:{OFFERID}',
         CN: '我们取消了可能已过期的交易。如有必要，请重试。TradeID:{OFFERID}',
-        FR:
-          "Nous avons annulé l'offre, il peut être expiré. Veuillez réessayer si vous le souhaitez. TradeID:{OFFERID}",
-        JA:
-          '有効期限が切れたため、オファーをキャンセルしました。よろしければ、もう一度お試しください。TradeID:{OFFERID}',
-        DE:
-          'Wir haben das Angebot storniert, es ist möglicherweise abgelaufen. Bitte versuchen Sie es erneut, wenn Sie dies wünschen. TradeID:{OFFERID}',
+        FR: "Nous avons annulé l'offre, il peut être expiré. Veuillez réessayer si vous le souhaitez. TradeID:{OFFERID}",
+        JA: '有効期限が切れたため、オファーをキャンセルしました。よろしければ、もう一度お試しください。TradeID:{OFFERID}',
+        DE: 'Wir haben das Angebot storniert, es ist möglicherweise abgelaufen. Bitte versuchen Sie es erneut, wenn Sie dies wünschen. TradeID:{OFFERID}',
       },
     },
     CANCELED: {
@@ -211,26 +155,18 @@ module.exports = {
           ES: '¡Oferta rechazada, no puedes obtener mis artículos!',
           CN: '报价被拒绝，您无法获得我的物品！',
           FR: 'Offre refusée, vous ne pouvez pas récupérer mes articles!',
-          JA:
-            'オファーが拒否されました、あなたは私のアイテムを手に入れることができません！',
+          JA: 'オファーが拒否されました、あなたは私のアイテムを手に入れることができません！',
           DE: 'Angebot abgelehnt, Sie können meine Artikel nicht bekommen!',
         },
         1: {
-          EN:
-            'Offer declined, the items were unavailable for exchange. Please try again',
-          PT:
-            'Oferta recusada, os itens não estavam disponíveis para troca. Por favor, tente novamente',
-          RU:
-            'Предложение отклонено, товары недоступны для обмена. Пожалуйста, попробуйте еще раз',
-          ES:
-            'Oferta rechazada, los artículos no estaban disponibles para cambio. Inténtalo de nuevo',
+          EN: 'Offer declined, the items were unavailable for exchange. Please try again',
+          PT: 'Oferta recusada, os itens não estavam disponíveis para troca. Por favor, tente novamente',
+          RU: 'Предложение отклонено, товары недоступны для обмена. Пожалуйста, попробуйте еще раз',
+          ES: 'Oferta rechazada, los artículos no estaban disponibles para cambio. Inténtalo de nuevo',
           CN: '报价被拒绝，这些物品无法交换。 请再试一遍',
-          FR:
-            "Offre refusée, les articles n'étaient pas disponibles pour l'échange. Veuillez réessayer",
-          JA:
-            'オファーは拒否され、アイテムは交換できませんでした。 もう一度やり直してください',
-          DE:
-            'Angebot abgelehnt, die Artikel waren nicht zum Umtausch verfügbar. Bitte versuche es erneut',
+          FR: "Offre refusée, les articles n'étaient pas disponibles pour l'échange. Veuillez réessayer",
+          JA: 'オファーは拒否され、アイテムは交換できませんでした。 もう一度やり直してください',
+          DE: 'Angebot abgelehnt, die Artikel waren nicht zum Umtausch verfügbar. Bitte versuche es erneut',
         },
       },
       THEM: {
@@ -255,21 +191,14 @@ module.exports = {
       DE: 'Das Angebot wurde angenommen!',
     },
     ESCROW: {
-      EN:
-        'You are in escrow and need to check your account for limitations. TradeID:{OFFERID}',
-      PT:
-        'Você está sob custódia e precisa verificar sua conta quanto a limitações. TradeID:{OFFERID}',
-      RU:
-        'Вы находитесь в условном депонировании и должны проверить свою учетную запись на наличие ограничений. TradeID:{OFFERID}',
-      ES:
-        'Está en custodia y necesita verificar su cuenta para ver las limitaciones. TradeID:{OFFERID}',
+      EN: 'You are in escrow and need to check your account for limitations. TradeID:{OFFERID}',
+      PT: 'Você está sob custódia e precisa verificar sua conta quanto a limitações. TradeID:{OFFERID}',
+      RU: 'Вы находитесь в условном депонировании и должны проверить свою учетную запись на наличие ограничений. TradeID:{OFFERID}',
+      ES: 'Está en custodia y necesita verificar su cuenta para ver las limitaciones. TradeID:{OFFERID}',
       CN: '您处于托管状态，需要检查您的账户是否有限制。 TradeID:{OFFERID}',
-      FR:
-        'Vous êtes sous séquestre et devez vérifier les limitations de votre compte. TradeID:{OFFERID}',
-      JA:
-        'あなたは拘留されており、アカウントの制限を確認する必要があります。 TradeID:{OFFERID}',
-      DE:
-        'Sie befinden sich in Haft und müssen Ihr Konto auf Einschränkungen überprüfen. TradeID:{OFFERID}',
+      FR: 'Vous êtes sous séquestre et devez vérifier les limitations de votre compte. TradeID:{OFFERID}',
+      JA: 'あなたは拘留されており、アカウントの制限を確認する必要があります。 TradeID:{OFFERID}',
+      DE: 'Sie befinden sich in Haft und müssen Ihr Konto auf Einschränkungen überprüfen. TradeID:{OFFERID}',
     },
     DONATION: {
       ACCEPTED: {
@@ -348,22 +277,14 @@ module.exports = {
           },
         },
         RESPONSE: {
-          EN:
-            '/pre New trade: \n • Command: {COMMAND}\n • SteamID: {ID64}\n • TradeID: {OFFERID}\n',
-          PT:
-            '/pre Nova Troca: \n • Comando: {COMMAND}\n • SteamID: {ID64}\n • ID comercial: {OFFERID}\n',
-          RU:
-            '/pre Новая сделка: \n • команды: {COMMAND}\n • SteamID: {ID64}\n • Торговый идентификатор: {OFFERID}\n',
-          ES:
-            '/pre Nuevo comercio: \n • Comando: {COMMAND}\n • SteamID: {ID64}\n • Identificación comercial: {OFFERID}\n',
-          CN:
-            '/pre 新贸易: \n • 命令：{COMMAND}\n • SteamID：{ID64}\n • 贸易编号：{OFFERID}\n',
-          FR:
-            '/pre Nouveau commerce: \n • Commander: {COMMAND}\n • SteamID: {ID64}\n • Identifiant commercial: {OFFERID}\n',
-          JA:
-            '/pre 新規貿易： \n • コマンド： {COMMAND}\n • SteamID：{ID64}\n • 取引ID：{OFFERID}\n',
-          DE:
-            '/pre Neuer Handel: \n • Befehl: {COMMAND}\n • SteamID: {ID64}\n • Handels-ID: {OFFERID}\n',
+          EN: '/pre New trade: \n • Command: {COMMAND}\n • SteamID: {ID64}\n • TradeID: {OFFERID}\n',
+          PT: '/pre Nova Troca: \n • Comando: {COMMAND}\n • SteamID: {ID64}\n • ID comercial: {OFFERID}\n',
+          RU: '/pre Новая сделка: \n • команды: {COMMAND}\n • SteamID: {ID64}\n • Торговый идентификатор: {OFFERID}\n',
+          ES: '/pre Nuevo comercio: \n • Comando: {COMMAND}\n • SteamID: {ID64}\n • Identificación comercial: {OFFERID}\n',
+          CN: '/pre 新贸易: \n • 命令：{COMMAND}\n • SteamID：{ID64}\n • 贸易编号：{OFFERID}\n',
+          FR: '/pre Nouveau commerce: \n • Commander: {COMMAND}\n • SteamID: {ID64}\n • Identifiant commercial: {OFFERID}\n',
+          JA: '/pre 新規貿易： \n • コマンド： {COMMAND}\n • SteamID：{ID64}\n • 取引ID：{OFFERID}\n',
+          DE: '/pre Neuer Handel: \n • Befehl: {COMMAND}\n • SteamID: {ID64}\n • Handels-ID: {OFFERID}\n',
         },
       },
       DONATION: {
@@ -449,8 +370,7 @@ module.exports = {
           CN: '这是{GEMS}套卡牌换取{HYDRA}钥匙。',
           FR: 'Voici {GEMS} gemmes en échange de {HYDRA} clé(s). ',
           JA: 'ここに{HYDRA}キーと引き換えに{GEMS}ジェムです。 ',
-          DE:
-            'Hier sind {GEMS} edelsteine im Austausch für {HYDRA} Schlüssel. ',
+          DE: 'Hier sind {GEMS} edelsteine im Austausch für {HYDRA} Schlüssel. ',
         },
         TF: {
           EN: 'Here are {GEMS} gem(s) in exchange for {TF} Key(s). ',
@@ -482,8 +402,7 @@ module.exports = {
           CN: '这是{HYDRA}钥匙换取{GEMS}套卡牌。',
           FR: 'Voici {HYDRA} clé(s) en échange de {GEMS} gemmes. ',
           JA: 'ここに{GEMS}ジェムと引き換えに{HYDRA}キーです。',
-          DE:
-            'Hier sind {HYDRA} Schlüssel im Austausch für {GEMS} edelsteine. ',
+          DE: 'Hier sind {HYDRA} Schlüssel im Austausch für {GEMS} edelsteine. ',
         },
         TF: {
           EN: 'Here are {TF} Key(s) in exchange for {GEMS} gem(s).',
@@ -512,17 +431,12 @@ module.exports = {
     RESPONSE: {
       0: {
         EN: '/pre Username: {USERNAME} \nID64: {ID64} \nMessage: {MESSAGE}',
-        PT:
-          '/pre Nome do usuário: {USERNAME} \nID64: {ID64} \nMensagem: {MESSAGE}',
-        RU:
-          '/pre имя пользователя: {USERNAME} \nID64: {ID64} \nСообщение: {MESSAGE}',
-        ES:
-          '/pre Nombre de usuario: {USERNAME} \nID64: {ID64} \nMensaje: {MESSAGE}',
+        PT: '/pre Nome do usuário: {USERNAME} \nID64: {ID64} \nMensagem: {MESSAGE}',
+        RU: '/pre имя пользователя: {USERNAME} \nID64: {ID64} \nСообщение: {MESSAGE}',
+        ES: '/pre Nombre de usuario: {USERNAME} \nID64: {ID64} \nMensaje: {MESSAGE}',
         CN: '/pre 用户名: {USERNAME} \nID64: {ID64} \n信息: {MESSAGE}',
-        FR:
-          "/pre Nom d'utilisateur: {USERNAME} \nID64: {ID64} \nMessage: {MESSAGE}",
-        JA:
-          '/pre ユーザー名： {USERNAME} \nID64: {ID64} \nメッセージ： {MESSAGE}',
+        FR: "/pre Nom d'utilisateur: {USERNAME} \nID64: {ID64} \nMessage: {MESSAGE}",
+        JA: '/pre ユーザー名： {USERNAME} \nID64: {ID64} \nメッセージ： {MESSAGE}',
         DE: '/pre Nutzername: {USERNAME} \nID64: {ID64} \nBotschaft: {MESSAGE}',
       },
       1: {
@@ -539,16 +453,12 @@ module.exports = {
     ERROR: {
       EN: 'Please enter a message - example: !REPORT Hello bot owner',
       PT: 'Digite uma mensagem - exemplo: !REPORT Olá dono do bot',
-      RU:
-        'Пожалуйста, введите сообщение - пример: !REPORT Привет, владелец бота',
-      ES:
-        'Por favor ingrese un mensaje - ejemplo: !REPORT Hola, propietario del bot',
+      RU: 'Пожалуйста, введите сообщение - пример: !REPORT Привет, владелец бота',
+      ES: 'Por favor ingrese un mensaje - ejemplo: !REPORT Hola, propietario del bot',
       CN: '请输入消息-例如： !REPORT 您好机器人所有者',
-      FR:
-        'Veuillez saisir un message - exemple: !REPORT Bonjour propriétaire de bot',
+      FR: 'Veuillez saisir un message - exemple: !REPORT Bonjour propriétaire de bot',
       JA: 'メッセージを入力してください-例： !REPORT こんにちはボットの所有者',
-      DE:
-        'Bitte geben Sie eine Nachricht ein - Beispiel: !REPORT Hallo Bot Besitzer',
+      DE: 'Bitte geben Sie eine Nachricht ein - Beispiel: !REPORT Hallo Bot Besitzer',
     },
   },
   AUTHCODE: {
@@ -698,36 +608,23 @@ module.exports = {
       CURRENCIES: {
         CSGO: {
           EN: ' • {CSGO} CS:GO key(s) for {GEMS1} gems - !BUYCSGO {CSGO} \n ',
-          PT:
-            ' • {CSGO} chave(s) CS:GO por {GEMS1} gemas - !BUYCSGO {CSGO} \n ',
-          RU:
-            ' • {CSGO} CS:GO ключ(ей) за {GEMS1} cамоцветы - !BUYCSGO {CSGO} \n ',
-          ES:
-            ' • {CSGO} llave(s) CS:GO por {GEMS1} gemas - !BUYCSGO {CSGO} \n ',
-          CN:
-            ' • {CSGO} 《反恐精英：全球攻势》钥匙以换取 {GEMS1} 宝石 - !BUYCSGO {CSGO} \n ',
+          PT: ' • {CSGO} chave(s) CS:GO por {GEMS1} gemas - !BUYCSGO {CSGO} \n ',
+          RU: ' • {CSGO} CS:GO ключ(ей) за {GEMS1} cамоцветы - !BUYCSGO {CSGO} \n ',
+          ES: ' • {CSGO} llave(s) CS:GO por {GEMS1} gemas - !BUYCSGO {CSGO} \n ',
+          CN: ' • {CSGO} 《反恐精英：全球攻势》钥匙以换取 {GEMS1} 宝石 - !BUYCSGO {CSGO} \n ',
           FR: ' • {CSGO} clés CS:GO pour {GEMS1} gemmes - !BUYCSGO {CSGO} \n ',
           JA: ' • {GEMS1}つの宝石用の{CSGO個のCS：GOキー - !BUYCSGO {CSGO} \n ',
-          DE:
-            ' • {CSGO} CS:GO-Schlüssel für {GEMS1} edelsteine - !BUYCSGO {CSGO} \n ',
+          DE: ' • {CSGO} CS:GO-Schlüssel für {GEMS1} edelsteine - !BUYCSGO {CSGO} \n ',
         },
         HYDRA: {
-          EN:
-            ' • {HYDRA} HYDRA key(s) for {GEMS2} gems - !BUYHYDRA {HYDRA} \n ',
-          PT:
-            ' • {HYDRA} chave(s) HYDRA por {GEMS2} gemas - !BUYHYDRA {HYDRA} \n ',
-          RU:
-            ' • {HYDRA} Гидра ключ(ей) за {GEMS2} cамоцветы - !BUYHYDRA {HYDRA} \n ',
-          ES:
-            ' • {HYDRA} llave(s) HYDRA por {GEMS2} gemas - !BUYHYDRA {HYDRA} \n ',
-          CN:
-            ' • {HYDRA} 九头蛇钥匙以换取 {GEMS2} 宝石 - !BUYHYDRA {HYDRA} \n ',
-          FR:
-            ' • {HYDRA} clés HYDRA pour {GEMS2} gemmes - !BUYHYDRA {HYDRA} \n ',
-          JA:
-            ' • {GEMS2}つの宝石用の{HYDRA}個のHYDRAキー - !BUYHYDRA {HYDRA} \n ',
-          DE:
-            ' • {HYDRA} HYDRA-Schlüssel für {GEMS2} edelsteine - !BUYHYDRA {HYDRA} \n ',
+          EN: ' • {HYDRA} HYDRA key(s) for {GEMS2} gems - !BUYHYDRA {HYDRA} \n ',
+          PT: ' • {HYDRA} chave(s) HYDRA por {GEMS2} gemas - !BUYHYDRA {HYDRA} \n ',
+          RU: ' • {HYDRA} Гидра ключ(ей) за {GEMS2} cамоцветы - !BUYHYDRA {HYDRA} \n ',
+          ES: ' • {HYDRA} llave(s) HYDRA por {GEMS2} gemas - !BUYHYDRA {HYDRA} \n ',
+          CN: ' • {HYDRA} 九头蛇钥匙以换取 {GEMS2} 宝石 - !BUYHYDRA {HYDRA} \n ',
+          FR: ' • {HYDRA} clés HYDRA pour {GEMS2} gemmes - !BUYHYDRA {HYDRA} \n ',
+          JA: ' • {GEMS2}つの宝石用の{HYDRA}個のHYDRAキー - !BUYHYDRA {HYDRA} \n ',
+          DE: ' • {HYDRA} HYDRA-Schlüssel für {GEMS2} edelsteine - !BUYHYDRA {HYDRA} \n ',
         },
         TF: {
           EN: ' • {TF} TF2 key(s) for {GEMS3} gems - !BUYTF {TF} \n ',
@@ -803,58 +700,34 @@ module.exports = {
         'Mit {AMOUNT} HYDRA-Schlüssel erhalten Sie {HYDRASELL} edelsteine. \n',
     },
     CSGO: {
-      EN:
-        '/pre With {CSGO} CS:GO key(s) you can get {GEMS} gems. \n\nInterested?, try: \n !BUYCSGO {CSGO}',
-      PT:
-        '/pre Com {CSGO} chave(s) CS:GO, você pode obter {GEMS} gemas. \n\nInteressado?, tente: \n !BUYCSGO {CSGO}',
-      RU:
-        '/pre С {CSGO} CS:GO ключ(и) вы можете получить {GEMS} cамоцветы. \n\nЗаинтересованы?, попробуйте: \n !BUYCSGO {CSGO}',
-      ES:
-        '/pre Con {CSGO} llave(s) CS:GO, puedes obtener {GEMS} gemas. \n\n¿Interesado?, prueba: \n !BUYCSGO {CSGO}',
-      CN:
-        '/pre 使用 {CSGO} 个《反恐精英：全球攻势》钥匙，您可以获得 {GEMS} 宝石。\n\n 有兴趣吗？，请尝试：\n !BUYCSGO {CSGO}',
-      FR:
-        '/pre Avec {CSGO} clés CS:GO, vous pouvez obtenir {GEMS} gemmes. \n\nIntéressé?, essayez: \n !BUYCSGO {CSGO}',
-      JA:
-        '/pre {CSGO}つのCS：GOキーを使用すると、{GEMS}ジェム。\n\n興味がありますか？、試してみてください： \n !BUYCSGO {CSGO}',
-      DE:
-        '/pre Mit {CSGO} CS:GO-Schlüsseln können Sie {GEMS} edelsteine. \n\nInteressiert? Versuchen Sie: \n !BUYCSGO {CSGO}',
+      EN: '/pre With {CSGO} CS:GO key(s) you can get {GEMS} gems. \n\nInterested?, try: \n !BUYCSGO {CSGO}',
+      PT: '/pre Com {CSGO} chave(s) CS:GO, você pode obter {GEMS} gemas. \n\nInteressado?, tente: \n !BUYCSGO {CSGO}',
+      RU: '/pre С {CSGO} CS:GO ключ(и) вы можете получить {GEMS} cамоцветы. \n\nЗаинтересованы?, попробуйте: \n !BUYCSGO {CSGO}',
+      ES: '/pre Con {CSGO} llave(s) CS:GO, puedes obtener {GEMS} gemas. \n\n¿Interesado?, prueba: \n !BUYCSGO {CSGO}',
+      CN: '/pre 使用 {CSGO} 个《反恐精英：全球攻势》钥匙，您可以获得 {GEMS} 宝石。\n\n 有兴趣吗？，请尝试：\n !BUYCSGO {CSGO}',
+      FR: '/pre Avec {CSGO} clés CS:GO, vous pouvez obtenir {GEMS} gemmes. \n\nIntéressé?, essayez: \n !BUYCSGO {CSGO}',
+      JA: '/pre {CSGO}つのCS：GOキーを使用すると、{GEMS}ジェム。\n\n興味がありますか？、試してみてください： \n !BUYCSGO {CSGO}',
+      DE: '/pre Mit {CSGO} CS:GO-Schlüsseln können Sie {GEMS} edelsteine. \n\nInteressiert? Versuchen Sie: \n !BUYCSGO {CSGO}',
     },
     HYDRA: {
-      EN:
-        '/pre With {HYDRA} Hydra key(s) you can get {GEMS} gems. \n\nInterested?, try: \n !BUYHYDRA {HYDRA}',
-      PT:
-        '/pre Com {HYDRA} chave(s) Hydra, você pode obter {GEMS} gemas. \n\nInteressado?, tente: \n !BUYHYDRA {HYDRA}',
-      RU:
-        '/pre С {HYDRA} Гидра ключ(и) вы можете получить {GEMS} cамоцветы. \n\nЗаинтересованы?, попробуйте: \n !BUYHYDRA {HYDRA}',
-      ES:
-        '/pre Con {HYDRA} llave(s) Hydra, puedes obtener {GEMS} gemas. \n\n¿Interesado?, prueba: \n !BUYHYDRA {HYDRA}',
-      CN:
-        '/pre 使用 {HYDRA} 个九头蛇钥匙，您可以获得 {GEMS} 宝石。\n\n有兴趣吗？，请尝试：\n !BUYHYDRA {HYDRA}',
-      FR:
-        '/pre Avec {HYDRA} clés HYDRA, vous pouvez obtenir {GEMS} gemmes. \n\nIntéressé?, essayez: \n !BUYHYDRA {HYDRA}',
-      JA:
-        '/pre {HYDRA}つのHYDRAキーを使用すると、{GEMS}ジェム。\n\n興味がありますか？、試してみてください： \n !BUYHYDRA {HYDRA}',
-      DE:
-        '/pre Mit {HYDRA} HYDRA-Schlüsseln können Sie {GEMS} edelsteine. \n\nInteressiert? Versuchen Sie: \n !BUYHYDRA {HYDRA}',
+      EN: '/pre With {HYDRA} Hydra key(s) you can get {GEMS} gems. \n\nInterested?, try: \n !BUYHYDRA {HYDRA}',
+      PT: '/pre Com {HYDRA} chave(s) Hydra, você pode obter {GEMS} gemas. \n\nInteressado?, tente: \n !BUYHYDRA {HYDRA}',
+      RU: '/pre С {HYDRA} Гидра ключ(и) вы можете получить {GEMS} cамоцветы. \n\nЗаинтересованы?, попробуйте: \n !BUYHYDRA {HYDRA}',
+      ES: '/pre Con {HYDRA} llave(s) Hydra, puedes obtener {GEMS} gemas. \n\n¿Interesado?, prueba: \n !BUYHYDRA {HYDRA}',
+      CN: '/pre 使用 {HYDRA} 个九头蛇钥匙，您可以获得 {GEMS} 宝石。\n\n有兴趣吗？，请尝试：\n !BUYHYDRA {HYDRA}',
+      FR: '/pre Avec {HYDRA} clés HYDRA, vous pouvez obtenir {GEMS} gemmes. \n\nIntéressé?, essayez: \n !BUYHYDRA {HYDRA}',
+      JA: '/pre {HYDRA}つのHYDRAキーを使用すると、{GEMS}ジェム。\n\n興味がありますか？、試してみてください： \n !BUYHYDRA {HYDRA}',
+      DE: '/pre Mit {HYDRA} HYDRA-Schlüsseln können Sie {GEMS} edelsteine. \n\nInteressiert? Versuchen Sie: \n !BUYHYDRA {HYDRA}',
     },
     TF: {
-      EN:
-        '/pre With {TF} TF2 key(s) you can get {GEMS} gems. \n\nInterested?, try: \n !BUYTF {TF}',
-      PT:
-        '/pre Com {TF} chave(s) TF2, você pode obter {GEMS} gemas. \n\nInteressado?, tente: \n !BUYTF {TF}',
-      RU:
-        '/pre С {TF} TF2 ключ(и) вы можете получить {GEMS} cамоцветы. \n\nЗаинтересованы?, попробуйте: \n !BUYTF {TF}',
-      ES:
-        '/pre Con {TF} llave(s) TF2, puedes obtener {GEMS} gemas. \n\n¿Interesado?, prueba: \n !BUYTF {TF}',
-      CN:
-        '/pre 使用 {TF} 个团队要塞2钥匙，您可以获得 {GEMS} 宝石。\n\n 有兴趣吗？，请尝试：\n !BUYTF {TF}',
-      FR:
-        '/pre Avec {TF} clés TF2, vous pouvez obtenir {GEMS} gemmes. \n\nIntéressé?, essayez: \n !BUYTF {TF}',
-      JA:
-        '/pre {TF}つのTF2キーを使用すると、{GEMS}ジェム。\n\n興味がありますか？、試してみてください： \n !BUYTF {TF}',
-      DE:
-        '/pre Mit {TF} TF2-Schlüsseln können Sie {GEMS} edelsteine. \n\nInteressiert? Versuchen Sie: \n !BUYTF {TF}',
+      EN: '/pre With {TF} TF2 key(s) you can get {GEMS} gems. \n\nInterested?, try: \n !BUYTF {TF}',
+      PT: '/pre Com {TF} chave(s) TF2, você pode obter {GEMS} gemas. \n\nInteressado?, tente: \n !BUYTF {TF}',
+      RU: '/pre С {TF} TF2 ключ(и) вы можете получить {GEMS} cамоцветы. \n\nЗаинтересованы?, попробуйте: \n !BUYTF {TF}',
+      ES: '/pre Con {TF} llave(s) TF2, puedes obtener {GEMS} gemas. \n\n¿Interesado?, prueba: \n !BUYTF {TF}',
+      CN: '/pre 使用 {TF} 个团队要塞2钥匙，您可以获得 {GEMS} 宝石。\n\n 有兴趣吗？，请尝试：\n !BUYTF {TF}',
+      FR: '/pre Avec {TF} clés TF2, vous pouvez obtenir {GEMS} gemmes. \n\nIntéressé?, essayez: \n !BUYTF {TF}',
+      JA: '/pre {TF}つのTF2キーを使用すると、{GEMS}ジェム。\n\n興味がありますか？、試してみてください： \n !BUYTF {TF}',
+      DE: '/pre Mit {TF} TF2-Schlüsseln können Sie {GEMS} edelsteine. \n\nInteressiert? Versuchen Sie: \n !BUYTF {TF}',
     },
   },
   SELLCHECK: {
@@ -862,30 +735,22 @@ module.exports = {
       CSGO: {
         EN: ' • {CSGO} CS:GO keys for {GEMS1} gems - !SELLCSGO {CSGO} \n ',
         PT: ' • {CSGO} chaves CS:GO por {GEMS1} gemas - !SELLCSGO {CSGO} \n ',
-        RU:
-          ' • {CSGO} CS:GO ключ(ей) за {GEMS1} cамоцветы - !SELLCSGO {CSGO} \n ',
+        RU: ' • {CSGO} CS:GO ключ(ей) за {GEMS1} cамоцветы - !SELLCSGO {CSGO} \n ',
         ES: ' • {CSGO} llave(s) CS:GO por {GEMS1} gemas - !SELLCSGO {CSGO} \n ',
-        CN:
-          ' • {CSGO} 《反恐精英：全球攻势》钥匙以换取 {GEMS1} 宝石 - !SELLCSGO {CSGO} \n ',
+        CN: ' • {CSGO} 《反恐精英：全球攻势》钥匙以换取 {GEMS1} 宝石 - !SELLCSGO {CSGO} \n ',
         FR: ' • {CSGO} clés CS:GO pour {GEMS1} gemmes - !SELLCSGO {CSGO} \n ',
         JA: ' • {GEMS1}ジェムのCS：GOキー{CSGO}個 - !SELLCSGO {CSGO} \n ',
-        DE:
-          ' • {CSGO} CS:GO-Schlüssel für {GEMS1} edelsteine - !SELLCSGO {CSGO} \n ',
+        DE: ' • {CSGO} CS:GO-Schlüssel für {GEMS1} edelsteine - !SELLCSGO {CSGO} \n ',
       },
       HYDRA: {
         EN: ' • {HYDRA} HYDRA keys for {GEMS2} gems - !SELLHYDRA {HYDRA} \n ',
-        PT:
-          ' • {HYDRA} chaves HYDRA por {GEMS2} gemas - !SELLHYDRA {HYDRA} \n ',
-        RU:
-          ' • {HYDRA} Гидра ключ(ей) за {GEMS2} cамоцветы - !SELLHYDRA {HYDRA} \n ',
-        ES:
-          ' • {HYDRA} llave(s) HYDRA por {GEMS2} gemas - !SELLHYDRA {HYDRA} \n ',
+        PT: ' • {HYDRA} chaves HYDRA por {GEMS2} gemas - !SELLHYDRA {HYDRA} \n ',
+        RU: ' • {HYDRA} Гидра ключ(ей) за {GEMS2} cамоцветы - !SELLHYDRA {HYDRA} \n ',
+        ES: ' • {HYDRA} llave(s) HYDRA por {GEMS2} gemas - !SELLHYDRA {HYDRA} \n ',
         CN: ' • {HYDRA} 九头蛇钥匙以换取 {GEMS2} 宝石 - !SELLHYDRA {HYDRA} \n ',
-        FR:
-          ' • {HYDRA} clés CS:GO pour {GEMS2} gemmes - !SELLHYDRA {HYDRA} \n ',
+        FR: ' • {HYDRA} clés CS:GO pour {GEMS2} gemmes - !SELLHYDRA {HYDRA} \n ',
         JA: ' • {GEMS2}ジェムのHYDRAキー{HYDRA}個 - !SELLHYDRA {HYDRA} \n ',
-        DE:
-          ' • {HYDRA} CS:GO-Schlüssel für {GEMS2} edelsteine - !SELLHYDRA {HYDRA} \n ',
+        DE: ' • {HYDRA} CS:GO-Schlüssel für {GEMS2} edelsteine - !SELLHYDRA {HYDRA} \n ',
       },
       TF: {
         EN: ' • {TF} TF2 keys for {GEMS3} gems - !SELLTF {TF} \n ',
@@ -1104,19 +969,13 @@ module.exports = {
     },
     ERROR: {
       EN: 'An error occurred while getting the profit. Please try again later.',
-      PT:
-        'Ocorreu um erro ao obter o lucro. Por favor, tente novamente mais tarde.',
-      RU:
-        'Произошла ошибка при получении прибыли. Пожалуйста, повторите попытку позже.',
-      ES:
-        'Se produjo un error al obtener la ganancia. Por favor, inténtelo de nuevo más tarde.',
+      PT: 'Ocorreu um erro ao obter o lucro. Por favor, tente novamente mais tarde.',
+      RU: 'Произошла ошибка при получении прибыли. Пожалуйста, повторите попытку позже.',
+      ES: 'Se produjo un error al obtener la ganancia. Por favor, inténtelo de nuevo más tarde.',
       CN: '获取利润时发生错误。 请稍后再试。',
-      FR:
-        "Une erreur s'est produite lors de l'obtention du profit. Veuillez réessayer plus tard.",
-      JA:
-        '利益を得ている間にエラーが発生しました。 後でもう一度やり直してください。',
-      DE:
-        'Beim Abrufen des Gewinns ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.',
+      FR: "Une erreur s'est produite lors de l'obtention du profit. Veuillez réessayer plus tard.",
+      JA: '利益を得ている間にエラーが発生しました。 後でもう一度やり直してください。',
+      DE: 'Beim Abrufen des Gewinns ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.',
     },
   },
   RESTART: {
@@ -1483,194 +1342,125 @@ module.exports = {
       DE: 'Bitte kein Spam.',
     },
     1: {
-      EN:
-        'You have been removed for spamming. Another offense will get you blocked.',
+      EN: 'You have been removed for spamming. Another offense will get you blocked.',
       PT: 'Você foi removido por spam. Outra ofensa o bloqueará.',
       RU: 'Вы были удалены за спам. Еще одно нарушение заблокирует вас.',
       ES: 'Has sido eliminado por spam. Otra ofensa te bloqueará.',
       CN: '您已被删除以发送垃圾邮件。 另一项冒犯将使您受阻。',
-      FR:
-        'Vous avez été supprimé pour spam. Une autre infraction vous bloquera.',
-      JA:
-        'スパム行為により削除されました。 別の違反はあなたをブロックさせます。',
-      DE:
-        'Sie wurden wegen Spam entfernt. Eine weitere Straftat wird Sie blockieren.',
+      FR: 'Vous avez été supprimé pour spam. Une autre infraction vous bloquera.',
+      JA: 'スパム行為により削除されました。 別の違反はあなたをブロックさせます。',
+      DE: 'Sie wurden wegen Spam entfernt. Eine weitere Straftat wird Sie blockieren.',
     },
     2: {
-      EN:
-        'User #{STEAMID64} has been removed for spamming. To block him use !block [STEAMID64]',
-      PT:
-        'O usuário #{STEAMID64} foi removido por spam. Para bloqueá-lo, use !block [STEAMID64]',
-      RU:
-        'Пользователь #{STEAMID64} был удален за спам. Чтобы заблокировать его, используйте !block [STEAMID64]',
-      ES:
-        'El usuario #{STEAMID64} ha sido eliminado por spam. Para bloquearlo use !block [STEAMID64]',
-      CN:
-        '用户 #{STEAMID64} 已被删除为发送垃圾邮件。 要阻止他，请使用 !block [STEAMID64]',
-      FR:
-        "L'utilisateur #{STEAMID64} a été supprimé pour spam. Pour le bloquer, utilisez !block [STEAMID64]",
-      JA:
-        'ユーザー#{STEAMID64}はスパムのために削除されました。 彼をブロックするには、!block [STEAMID64]を使用します',
-      DE:
-        'Der Benutzer #{STEAMID64} wurde wegen Spam entfernt. Um ihn zu blockieren, benutze !block [STEAMID64]',
+      EN: 'User #{STEAMID64} has been removed for spamming. To block him use !block [STEAMID64]',
+      PT: 'O usuário #{STEAMID64} foi removido por spam. Para bloqueá-lo, use !block [STEAMID64]',
+      RU: 'Пользователь #{STEAMID64} был удален за спам. Чтобы заблокировать его, используйте !block [STEAMID64]',
+      ES: 'El usuario #{STEAMID64} ha sido eliminado por spam. Para bloquearlo use !block [STEAMID64]',
+      CN: '用户 #{STEAMID64} 已被删除为发送垃圾邮件。 要阻止他，请使用 !block [STEAMID64]',
+      FR: "L'utilisateur #{STEAMID64} a été supprimé pour spam. Pour le bloquer, utilisez !block [STEAMID64]",
+      JA: 'ユーザー#{STEAMID64}はスパムのために削除されました。 彼をブロックするには、!block [STEAMID64]を使用します',
+      DE: 'Der Benutzer #{STEAMID64} wurde wegen Spam entfernt. Um ihn zu blockieren, benutze !block [STEAMID64]',
     },
   },
   LOADING: {
     EN: "I'm currently loading my inventory. Please try again later",
-    PT:
-      'Atualmente, estou carregando meu inventário. Por favor, tente novamente mais tarde',
+    PT: 'Atualmente, estou carregando meu inventário. Por favor, tente novamente mais tarde',
     RU: 'Я сейчас загружаю свой инвентарь. Пожалуйста, попробуйте позже',
-    ES:
-      'Actualmente estoy cargando mi inventario. Por favor, inténtelo de nuevo más tarde',
+    ES: 'Actualmente estoy cargando mi inventario. Por favor, inténtelo de nuevo más tarde',
     CN: '我目前正在加载我的库存。 请稍后再试',
     FR: 'Je charge actuellement mon inventaire. Veuillez réessayer plus tard',
     JA: '現在、在庫を読み込んでいます。 後でもう一度やり直してください',
-    DE:
-      'Ich lade gerade mein Inventar. Bitte versuchen Sie es später noch einmal',
+    DE: 'Ich lade gerade mein Inventar. Bitte versuchen Sie es später noch einmal',
   },
   ERROR: {
     GETITEMS: {
       EN: 'An error occurred while getting items. Please try again later!',
-      PT:
-        'Ocorreu um erro ao obter os itens. Por favor, tente novamente mais tarde!',
-      RU:
-        'Произошла ошибка при получении предметов. Пожалуйста, повторите попытку позже!',
-      ES:
-        'Se produjo un error al obtener los artículos. ¡Por favor, inténtelo de nuevo más tarde!',
+      PT: 'Ocorreu um erro ao obter os itens. Por favor, tente novamente mais tarde!',
+      RU: 'Произошла ошибка при получении предметов. Пожалуйста, повторите попытку позже!',
+      ES: 'Se produjo un error al obtener los artículos. ¡Por favor, inténtelo de nuevo más tarde!',
       CN: '获取物品时发生错误。 请稍后再试！',
-      FR:
-        "Une erreur s'est produite lors de l'obtention des éléments. Veuillez réessayer plus tard!",
-      JA:
-        'アイテムの取得中にエラーが発生しました。 後でもう一度やり直してください。',
-      DE:
-        'Beim Abrufen von Elementen ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal!',
+      FR: "Une erreur s'est produite lors de l'obtention des éléments. Veuillez réessayer plus tard!",
+      JA: 'アイテムの取得中にエラーが発生しました。 後でもう一度やり直してください。',
+      DE: 'Beim Abrufen von Elementen ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal!',
     },
     GETOFFER: {
-      EN:
-        'An error occurred while getting your offers. Please try again later!',
-      PT:
-        'Ocorreu um erro ao obter suas ofertas. Por favor, tente novamente mais tarde!',
-      RU:
-        'При получении ваших предложений произошла ошибка. Пожалуйста, повторите попытку позже!',
-      ES:
-        'Se produjo un error al recibir sus ofertas. ¡Por favor, inténtelo de nuevo más tarde!',
+      EN: 'An error occurred while getting your offers. Please try again later!',
+      PT: 'Ocorreu um erro ao obter suas ofertas. Por favor, tente novamente mais tarde!',
+      RU: 'При получении ваших предложений произошла ошибка. Пожалуйста, повторите попытку позже!',
+      ES: 'Se produjo un error al recibir sus ofertas. ¡Por favor, inténtelo de nuevo más tarde!',
       CN: '获取报价时发生错误。 请稍后再试！',
-      FR:
-        "Une erreur s'est produite lors de l'obtention de vos offres. Veuillez réessayer plus tard!",
-      JA:
-        'オファーの取得中にエラーが発生しました。 後でもう一度やり直してください。',
-      DE:
-        'Beim Abrufen Ihrer Angebote ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal!',
+      FR: "Une erreur s'est produite lors de l'obtention de vos offres. Veuillez réessayer plus tard!",
+      JA: 'オファーの取得中にエラーが発生しました。 後でもう一度やり直してください。',
+      DE: 'Beim Abrufen Ihrer Angebote ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal!',
     },
     CANCELOFFER: {
-      EN:
-        'An error occurred while canceling your offers. Please try again later!',
-      PT:
-        'Ocorreu um erro ao cancelar suas ofertas. Por favor, tente novamente mais tarde!',
-      RU:
-        'Произошла ошибка при отмене ваших предложений. Пожалуйста, повторите попытку позже!',
-      ES:
-        'Se produjo un error al cancelar sus ofertas. ¡Por favor, inténtelo de nuevo más tarde!',
+      EN: 'An error occurred while canceling your offers. Please try again later!',
+      PT: 'Ocorreu um erro ao cancelar suas ofertas. Por favor, tente novamente mais tarde!',
+      RU: 'Произошла ошибка при отмене ваших предложений. Пожалуйста, повторите попытку позже!',
+      ES: 'Se produjo un error al cancelar sus ofertas. ¡Por favor, inténtelo de nuevo más tarde!',
       CN: '取消报价时发生错误。 请稍后再试！',
-      FR:
-        "Une erreur s'est produite lors de l'annulation de vos offres. Veuillez réessayer plus tard!",
-      JA:
-        'オファーのキャンセル中にエラーが発生しました。 後でもう一度やり直してください。',
-      DE:
-        'Beim Stornieren Ihrer Angebote ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal!',
+      FR: "Une erreur s'est produite lors de l'annulation de vos offres. Veuillez réessayer plus tard!",
+      JA: 'オファーのキャンセル中にエラーが発生しました。 後でもう一度やり直してください。',
+      DE: 'Beim Stornieren Ihrer Angebote ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal!',
     },
     NONEXISTENTOFFER: {
       EN: 'Offer with ID:{OFFERID} is not active, so it may not be cancelled.',
-      PT:
-        'A oferta com ID:{OFFERID} não está ativa, portanto não pode ser cancelada.',
+      PT: 'A oferta com ID:{OFFERID} não está ativa, portanto não pode ser cancelada.',
       RU: 'Оффер с ID:{OFFERID} не активен, поэтому его нельзя отменить.',
-      ES:
-        'La oferta con ID:{OFFERID} no está activa, por lo que no se puede cancelar.',
+      ES: 'La oferta con ID:{OFFERID} no está activa, por lo que no se puede cancelar.',
       CN: 'ID:{OFFERID}的优惠未激活，因此可能不会被取消。',
-      FR:
-        "L'offre avec ID:{OFFERID} n'est pas active, elle ne peut donc pas être annulée.",
-      JA:
-        'ID:{OFFERID}のオファーはアクティブではないため、キャンセルされない場合があります。',
-      DE:
-        'Angebot mit ID:{OFFERID} ist nicht aktiv und kann daher nicht storniert werden.',
+      FR: "L'offre avec ID:{OFFERID} n'est pas active, elle ne peut donc pas être annulée.",
+      JA: 'ID:{OFFERID}のオファーはアクティブではないため、キャンセルされない場合があります。',
+      DE: 'Angebot mit ID:{OFFERID} ist nicht aktiv und kann daher nicht storniert werden.',
     },
     TRADEHOLD: {
-      EN:
-        'An error occurred while getting your trade holds. Make sure you have no trade hold. Please try again!',
-      PT:
-        'Ocorreu um erro ao obter suas negociação. Certifique-se de que você não tem retenção comercial. Por favor, tente novamente!',
-      RU:
-        'Произошла ошибка при получении сохранения транзакции. Убедитесь, что у вас нет торговых приостановок. Пожалуйста, попробуйте еще раз!',
-      ES:
-        'Se produjo un error al obtener sus retenciones comerciales. Asegúrese de no tener retenciones de intercambio. ¡Inténtalo de nuevo!',
+      EN: 'An error occurred while getting your trade holds. Make sure you have no trade hold. Please try again!',
+      PT: 'Ocorreu um erro ao obter suas negociação. Certifique-se de que você não tem retenção comercial. Por favor, tente novamente!',
+      RU: 'Произошла ошибка при получении сохранения транзакции. Убедитесь, что у вас нет торговых приостановок. Пожалуйста, попробуйте еще раз!',
+      ES: 'Se produjo un error al obtener sus retenciones comerciales. Asegúrese de no tener retenciones de intercambio. ¡Inténtalo de nuevo!',
       CN: '获取您的交易保留权时发生错误。确保您没有交易暂停。请再试一遍！',
-      FR:
-        "Une erreur s'est produite lors de l'obtention de votre transaction. Assurez-vous que vous n'avez pas de blocage de transaction. Veuillez réessayer!",
-      JA:
-        'トレードホールドの取得中にエラーが発生しました。 トレードホールドがないことを確認してください。 もう一度やり直してください！',
-      DE:
-        'Beim Abrufen Ihrer Trade Holds ist ein Fehler aufgetreten. Stellen Sie sicher, dass Sie keinen Trade Hold haben. Bitte versuche es erneut!',
+      FR: "Une erreur s'est produite lors de l'obtention de votre transaction. Assurez-vous que vous n'avez pas de blocage de transaction. Veuillez réessayer!",
+      JA: 'トレードホールドの取得中にエラーが発生しました。 トレードホールドがないことを確認してください。 もう一度やり直してください！',
+      DE: 'Beim Abrufen Ihrer Trade Holds ist ein Fehler aufgetreten. Stellen Sie sicher, dass Sie keinen Trade Hold haben. Bitte versuche es erneut!',
     },
     SENDTRADE: {
-      EN:
-        'An error occurred while sending your trade. Steam Trades could be down. Please try again later.',
-      PT:
-        'Ocorreu um erro ao enviar a transação. Pode haver um problema com o serviço Steam. Por favor, tente novamente mais tarde.',
-      RU:
-        'Произошла ошибка при отправке вашей предложения обмена. Steam обмена может быть закрыт. Пожалуйста, попробуйте позже.',
-      ES:
-        'Se produjo un error al enviar su operación. Puede haber un problema con el servicio Steam. Por favor, inténtelo de nuevo más tarde.',
+      EN: 'An error occurred while sending your trade. Steam Trades could be down. Please try again later.',
+      PT: 'Ocorreu um erro ao enviar a transação. Pode haver um problema com o serviço Steam. Por favor, tente novamente mais tarde.',
+      RU: 'Произошла ошибка при отправке вашей предложения обмена. Steam обмена может быть закрыт. Пожалуйста, попробуйте позже.',
+      ES: 'Se produjo un error al enviar su operación. Puede haber un problema con el servicio Steam. Por favor, inténtelo de nuevo más tarde.',
       CN: '发送您的交易时发生错误。Steam 交易可能处于离线状态。 请稍后再试。',
-      FR:
-        "Une erreur s'est produite lors de la soumission de la transaction. Il peut y avoir un problème avec le service Steam. Veuillez réessayer plus tard.",
-      JA:
-        '取引の送信中にエラーが発生しました。 Steamサービスで問題が発生している可能性があります。 後でもう一度やり直してください。',
-      DE:
-        'Beim Senden der Transaktion ist ein Fehler aufgetreten. Möglicherweise liegt ein Problem mit dem Steam-Dienst vor. Bitte versuchen Sie es später noch einmal.',
+      FR: "Une erreur s'est produite lors de la soumission de la transaction. Il peut y avoir un problème avec le service Steam. Veuillez réessayer plus tard.",
+      JA: '取引の送信中にエラーが発生しました。 Steamサービスで問題が発生している可能性があります。 後でもう一度やり直してください。',
+      DE: 'Beim Senden der Transaktion ist ein Fehler aufgetreten. Möglicherweise liegt ein Problem mit dem Steam-Dienst vor. Bitte versuchen Sie es später noch einmal.',
     },
     INPUT: {
       UNKNOW: {
         CUSTOMER: {
           EN: 'Command not recognized. Use !HELP to see how this bot works.',
-          PT:
-            'Comando não reconhecido. Use !AJUDA para ver como esse bot funciona.',
-          RU:
-            'Команда не распознана. Используйте !ПОМОЩЬ, чтобы увидеть, как работает этот бот.',
-          ES:
-            'Comando no reconocido. Use !AYUDA para ver cómo funciona este bot.',
+          PT: 'Comando não reconhecido. Use !AJUDA para ver como esse bot funciona.',
+          RU: 'Команда не распознана. Используйте !ПОМОЩЬ, чтобы увидеть, как работает этот бот.',
+          ES: 'Comando no reconocido. Use !AYUDA para ver cómo funciona este bot.',
           CN: '无法识别命令。 使用《!救命》查看该机器人的工作方式。',
-          FR:
-            'Commande non reconnue. Utilisez !AIDER pour voir comment ce bot fonctionne.',
-          JA:
-            'コマンドが認識されません。「！助けて」を使用して、このボットがどのように機能するかを確認してください。',
-          DE:
-            'Befehl nicht erkannt. Verwenden Sie !HILFE, um zu sehen, wie dieser Bot funktioniert.',
+          FR: 'Commande non reconnue. Utilisez !AIDER pour voir comment ce bot fonctionne.',
+          JA: 'コマンドが認識されません。「！助けて」を使用して、このボットがどのように機能するかを確認してください。',
+          DE: 'Befehl nicht erkannt. Verwenden Sie !HILFE, um zu sehen, wie dieser Bot funktioniert.',
         },
         ADMIN: {
-          EN:
-            'Command not recognized. Use !HELP or !ADMIN to see how this bot works.',
-          PT:
-            'Comando não reconhecido. Use !AJUDA ou !ADMIN para ver como esse bot funciona.',
-          RU:
-            'Команда не распознана. Используйте !ПОМОЩЬ или !ADMIN, чтобы увидеть, как работает этот бот.',
-          ES:
-            'Comando no reconocido. Use !AYUDA o !ADMIN para ver cómo funciona este bot.',
-          CN:
-            '无法识别命令。 使用《!救命》或《!ADMIN》查看该机器人的工作方式。',
-          FR:
-            'Commande non reconnue. Utilisez !AIDER ou !ADMIN pour voir comment ce bot fonctionne.',
-          JA:
-            'コマンドが認識されません。「！助けて」または「！ADMIN」を使用して、このボットがどのように機能するかを確認してください。',
-          DE:
-            'Befehl nicht erkannt. Verwenden Sie !HILFE oder !ADMIN, um zu sehen, wie dieser Bot funktioniert.',
+          EN: 'Command not recognized. Use !HELP or !ADMIN to see how this bot works.',
+          PT: 'Comando não reconhecido. Use !AJUDA ou !ADMIN para ver como esse bot funciona.',
+          RU: 'Команда не распознана. Используйте !ПОМОЩЬ или !ADMIN, чтобы увидеть, как работает этот бот.',
+          ES: 'Comando no reconocido. Use !AYUDA o !ADMIN para ver cómo funciona este bot.',
+          CN: '无法识别命令。 使用《!救命》或《!ADMIN》查看该机器人的工作方式。',
+          FR: 'Commande non reconnue. Utilisez !AIDER ou !ADMIN pour voir comment ce bot fonctionne.',
+          JA: 'コマンドが認識されません。「！助けて」または「！ADMIN」を使用して、このボットがどのように機能するかを確認してください。',
+          DE: 'Befehl nicht erkannt. Verwenden Sie !HILFE oder !ADMIN, um zu sehen, wie dieser Bot funktioniert.',
         },
       },
       INVALID: {
         OFFERID: {
           EN: 'Please enter a valid offerID - example: {command}',
           PT: 'Insira um ID de oferta válido - exemplo: {command}',
-          RU:
-            'Введите действительный идентификатор предложения - пример: {command}',
+          RU: 'Введите действительный идентификатор предложения - пример: {command}',
           ES: 'Ingrese un ID de oferta válido - ejemplo: {command}',
           CN: '请输入有效的offerID-例如： {command}',
           FR: "Saisissez un identifiant d'offre valide - exemple: {command}",
@@ -1690,55 +1480,42 @@ module.exports = {
         CSGO: {
           EN: 'Please provide a valid amount of keys - example: {command}',
           PT: 'Forneça uma quantidade válida de chaves - exemplo: {command}',
-          RU:
-            'Пожалуйста, предоставьте действительное количество ключей - пример: {command}',
-          ES:
-            'Proporcione una cantidad válida de llaves, por ejemplo: {command}',
+          RU: 'Пожалуйста, предоставьте действительное количество ключей - пример: {command}',
+          ES: 'Proporcione una cantidad válida de llaves, por ejemplo: {command}',
           CN: '请提供有效的钥匙数-例如： {command}',
           FR: 'Veuillez fournir un nombre valide de clés - exemple: {command}',
           JA: '有効な量のキーを入力してください-例： {command}',
-          DE:
-            'Bitte geben Sie eine gültige Anzahl von Schlüsseln an - Beispiel: {command}',
+          DE: 'Bitte geben Sie eine gültige Anzahl von Schlüsseln an - Beispiel: {command}',
         },
         HYDRA: {
           EN: 'Please provide a valid amount of keys - example: {command}',
           PT: 'Forneça uma quantidade válida de chaves - exemplo: {command}',
-          RU:
-            'Пожалуйста, предоставьте действительное количество ключей - пример: {command}',
-          ES:
-            'Proporcione una cantidad válida de llaves, por ejemplo: {command}',
+          RU: 'Пожалуйста, предоставьте действительное количество ключей - пример: {command}',
+          ES: 'Proporcione una cantidad válida de llaves, por ejemplo: {command}',
           CN: '请提供有效的钥匙数-例如： {command}',
           FR: 'Veuillez fournir un nombre valide de clés - exemple: {command}',
           JA: '有効な量のキーを入力してください-例： {command}',
-          DE:
-            'Bitte geben Sie eine gültige Anzahl von Schlüsseln an - Beispiel: {command}',
+          DE: 'Bitte geben Sie eine gültige Anzahl von Schlüsseln an - Beispiel: {command}',
         },
         TF: {
           EN: 'Please provide a valid amount of keys - example: {command}',
           PT: 'Forneça uma quantidade válida de chaves - exemplo: {command}',
-          RU:
-            'Пожалуйста, предоставьте действительное количество ключей - пример: {command}',
-          ES:
-            'Proporcione una cantidad válida de llaves, por ejemplo: {command}',
+          RU: 'Пожалуйста, предоставьте действительное количество ключей - пример: {command}',
+          ES: 'Proporcione una cantidad válida de llaves, por ejemplo: {command}',
           CN: '请提供有效的钥匙数-例如： {command}',
           FR: 'Veuillez fournir un nombre valide de clés - exemple: {command}',
           JA: '有効な量のキーを入力してください-例： {command}',
-          DE:
-            'Bitte geben Sie eine gültige Anzahl von Schlüsseln an - Beispiel: {command}',
+          DE: 'Bitte geben Sie eine gültige Anzahl von Schlüsseln an - Beispiel: {command}',
         },
         GEMS: {
           EN: 'Please provide a valid amount of gems - example: {command}',
           PT: 'Forneça uma quantidade válida de gemas - exemplo: {command}',
-          RU:
-            'Пожалуйста, предоставьте действительное количество самоцветы - пример: {command}',
-          ES:
-            'Proporcione una cantidad válida de gemas, por ejemplo: {command}',
+          RU: 'Пожалуйста, предоставьте действительное количество самоцветы - пример: {command}',
+          ES: 'Proporcione una cantidad válida de gemas, por ejemplo: {command}',
           CN: '请提供有效的宝石数-例如： {command}',
-          FR:
-            'Veuillez fournir une quantité valide de gemmes - exemple: {command}',
+          FR: 'Veuillez fournir une quantité valide de gemmes - exemple: {command}',
           JA: '有効な量の宝石を提供してください-例： {command}',
-          DE:
-            'Bitte geben Sie eine gültige Anzahl an Edelsteinen an - Beispiel: {command}',
+          DE: 'Bitte geben Sie eine gültige Anzahl an Edelsteinen an - Beispiel: {command}',
         },
         STEAMID64: {
           EN: 'Please provide a valid SteamID64',
@@ -1753,91 +1530,56 @@ module.exports = {
       },
       AMOUNTLOW: {
         GEMS: {
-          EN:
-            "Sorry but i can't sell you nothing with that amount of gems - use: !PRICES \n",
-          PT:
-            'Desculpe, mas não posso vender nada com essa quantidade de gemas - use: !PRICES \n',
-          RU:
-            'Извините, но я ничего не могу продать вам с таким количеством самоцветы - используйте: !PRICES \n',
-          ES:
-            'Lo siento, pero no puedo venderte nada con esa cantidad de gemas. usa: !PRICES \n',
+          EN: "Sorry but i can't sell you nothing with that amount of gems - use: !PRICES \n",
+          PT: 'Desculpe, mas não posso vender nada com essa quantidade de gemas - use: !PRICES \n',
+          RU: 'Извините, но я ничего не могу продать вам с таким количеством самоцветы - используйте: !PRICES \n',
+          ES: 'Lo siento, pero no puedo venderte nada con esa cantidad de gemas. usa: !PRICES \n',
           CN: '抱歉，但是我不能用那么多的宝石卖给你-使用： !PRICES \n',
-          FR:
-            'Désolé mais je ne peux rien vous vendre avec autant de gemmes - utilisez: !PRICES \n',
-          JA:
-            '申し訳ありませんが、その量の宝石では何も販売できません-使用：！PRICES \n',
-          DE:
-            'Entschuldigung, aber ich kann dir mit dieser Menge an Edelsteinen nichts verkaufen - benutze: !PRICES \n',
+          FR: 'Désolé mais je ne peux rien vous vendre avec autant de gemmes - utilisez: !PRICES \n',
+          JA: '申し訳ありませんが、その量の宝石では何も販売できません-使用：！PRICES \n',
+          DE: 'Entschuldigung, aber ich kann dir mit dieser Menge an Edelsteinen nichts verkaufen - benutze: !PRICES \n',
         },
       },
       AMOUNTOVER: {
         CSGO: {
-          EN:
-            'Please try a lower amount of keys. The maximum amount for this command is {KEYS}.',
-          PT:
-            'Por favor, tente uma quantidade menor de chaves. A quantidade maxima para esse comando é {KEYS}.',
-          RU:
-            'Пожалуйста, попробуйте меньшее количество ключи. Максимальное количество для этой команды {KEYS}.',
-          ES:
-            'Por favor, intente una menor cantidad de llaves. La cantidad máxima para este comando es {KEYS}.',
+          EN: 'Please try a lower amount of keys. The maximum amount for this command is {KEYS}.',
+          PT: 'Por favor, tente uma quantidade menor de chaves. A quantidade maxima para esse comando é {KEYS}.',
+          RU: 'Пожалуйста, попробуйте меньшее количество ключи. Максимальное количество для этой команды {KEYS}.',
+          ES: 'Por favor, intente una menor cantidad de llaves. La cantidad máxima para este comando es {KEYS}.',
           CN: '请尝试减少钥匙数。此命令的最大数量为{KEYS}。',
-          FR:
-            'Veuillez essayer un nombre inférieur de clés. Le montant maximum pour cette commande est de {KEYS}.',
-          JA:
-            'キーの数を減らしてみてください。このコマンドの最大量は{KEYS}です。',
-          DE:
-            'Bitte versuchen Sie es mit einer geringeren Anzahl von Schlüsseln. Der maximale Betrag für diesen Befehl beträgt {KEYS}.',
+          FR: 'Veuillez essayer un nombre inférieur de clés. Le montant maximum pour cette commande est de {KEYS}.',
+          JA: 'キーの数を減らしてみてください。このコマンドの最大量は{KEYS}です。',
+          DE: 'Bitte versuchen Sie es mit einer geringeren Anzahl von Schlüsseln. Der maximale Betrag für diesen Befehl beträgt {KEYS}.',
         },
         HYDRA: {
-          EN:
-            'Please try a lower amount of keys. The maximum amount for this command is {KEYS}.',
-          PT:
-            'Por favor, tente uma quantidade menor de chaves. A quantidade maxima para esse comando é {KEYS}.',
-          RU:
-            'Пожалуйста, попробуйте меньшее количество ключи. Максимальное количество для этой команды {KEYS}.',
-          ES:
-            'Por favor, intente una menor cantidad de llaves. La cantidad máxima para este comando es {KEYS}.',
+          EN: 'Please try a lower amount of keys. The maximum amount for this command is {KEYS}.',
+          PT: 'Por favor, tente uma quantidade menor de chaves. A quantidade maxima para esse comando é {KEYS}.',
+          RU: 'Пожалуйста, попробуйте меньшее количество ключи. Максимальное количество для этой команды {KEYS}.',
+          ES: 'Por favor, intente una menor cantidad de llaves. La cantidad máxima para este comando es {KEYS}.',
           CN: '请尝试减少钥匙数。此命令的最大数量为{KEYS}。',
-          FR:
-            'Veuillez essayer un nombre inférieur de clés. Le montant maximum pour cette commande est de {KEYS}.',
-          JA:
-            'キーの数を減らしてみてください。このコマンドの最大量は{KEYS}です。',
-          DE:
-            'Bitte versuchen Sie es mit einer geringeren Anzahl von Schlüsseln. Der maximale Betrag für diesen Befehl beträgt {KEYS}.',
+          FR: 'Veuillez essayer un nombre inférieur de clés. Le montant maximum pour cette commande est de {KEYS}.',
+          JA: 'キーの数を減らしてみてください。このコマンドの最大量は{KEYS}です。',
+          DE: 'Bitte versuchen Sie es mit einer geringeren Anzahl von Schlüsseln. Der maximale Betrag für diesen Befehl beträgt {KEYS}.',
         },
         TF: {
-          EN:
-            'Please try a lower amount of keys. The maximum amount for this command is {KEYS}.',
-          PT:
-            'Por favor, tente uma quantidade menor de chaves. A quantidade maxima para esse comando é {KEYS}.',
-          RU:
-            'Пожалуйста, попробуйте меньшее количество ключи. Максимальное количество для этой команды {KEYS}.',
-          ES:
-            'Por favor, intente una menor cantidad de llaves. La cantidad máxima para este comando es {KEYS}.',
+          EN: 'Please try a lower amount of keys. The maximum amount for this command is {KEYS}.',
+          PT: 'Por favor, tente uma quantidade menor de chaves. A quantidade maxima para esse comando é {KEYS}.',
+          RU: 'Пожалуйста, попробуйте меньшее количество ключи. Максимальное количество для этой команды {KEYS}.',
+          ES: 'Por favor, intente una menor cantidad de llaves. La cantidad máxima para este comando es {KEYS}.',
           CN: '请尝试减少钥匙数。此命令的最大数量为{KEYS}。',
-          FR:
-            'Veuillez essayer un nombre inférieur de clés. Le montant maximum pour cette commande est de {KEYS}.',
-          JA:
-            'キーの数を減らしてみてください。このコマンドの最大量は{KEYS}です。',
-          DE:
-            'Bitte versuchen Sie es mit einer geringeren Anzahl von Schlüsseln. Der maximale Betrag für diesen Befehl beträgt {KEYS}.',
+          FR: 'Veuillez essayer un nombre inférieur de clés. Le montant maximum pour cette commande est de {KEYS}.',
+          JA: 'キーの数を減らしてみてください。このコマンドの最大量は{KEYS}です。',
+          DE: 'Bitte versuchen Sie es mit einer geringeren Anzahl von Schlüsseln. Der maximale Betrag für diesen Befehl beträgt {KEYS}.',
         },
         GEMS: {
-          EN:
-            'Please try a lower amount of gems. The maximum amount for this command is {GEMS}.',
-          PT:
-            'Por favor, tente uma quantidade menor de gemas. A quantidade maxima para esse comando é {GEMS}.',
-          RU:
-            'Пожалуйста, попробуйте меньшее количество самоцветы. Максимальное количество для этой команды {GEMS}.',
-          ES:
-            'Por favor, intente una menor cantidad de gemas. La cantidad máxima para este comando es {GEMS}.',
+          EN: 'Please try a lower amount of gems. The maximum amount for this command is {GEMS}.',
+          PT: 'Por favor, tente uma quantidade menor de gemas. A quantidade maxima para esse comando é {GEMS}.',
+          RU: 'Пожалуйста, попробуйте меньшее количество самоцветы. Максимальное количество для этой команды {GEMS}.',
+          ES: 'Por favor, intente una menor cantidad de gemas. La cantidad máxima para este comando es {GEMS}.',
           CN: '请尝试减少宝石数。此命令的最大数量为{GEMS}',
-          FR:
-            'Veuillez essayer une quantité inférieure de gemmes. Le montant maximum pour cette commande est de {GEMS}.',
-          JA:
-            '宝石の量を減らしてみてください。このコマンドの最大量は{GEMS}です。',
-          DE:
-            'Bitte versuchen Sie es mit einer geringeren Anzahl von Edelsteinen. Der maximale Betrag für diesen Befehl beträgt {GEMS}.',
+          FR: 'Veuillez essayer une quantité inférieure de gemmes. Le montant maximum pour cette commande est de {GEMS}.',
+          JA: '宝石の量を減らしてみてください。このコマンドの最大量は{GEMS}です。',
+          DE: 'Bitte versuchen Sie es mit einer geringeren Anzahl von Edelsteinen. Der maximale Betrag für diesen Befehl beträgt {GEMS}.',
         },
       },
     },
@@ -1856,20 +1598,14 @@ module.exports = {
               DE: 'Der Bot hat nicht genügend Schlüssel.',
             },
             1: {
-              EN:
-                "The bot don't have enough keys to send. (He has {CSGO} keys)",
-              PT:
-                'O bot não tem chaves suficientes para enviar. (Ele tem {CSGO} chaves)',
-              RU:
-                'У бота недостаточно ключей для отправки. (У него {CSGO} ключей)',
-              ES:
-                'El bot no tiene suficientes llaves para enviar. (Él tiene {CSGO} llaves)',
+              EN: "The bot don't have enough keys to send. (He has {CSGO} keys)",
+              PT: 'O bot não tem chaves suficientes para enviar. (Ele tem {CSGO} chaves)',
+              RU: 'У бота недостаточно ключей для отправки. (У него {CSGO} ключей)',
+              ES: 'El bot no tiene suficientes llaves para enviar. (Él tiene {CSGO} llaves)',
               CN: '该机器人没有足够的钥匙来发送。 （他有 {CSGO} 把钥匙）',
               FR: "Le bot n'a pas assez de clés à envoyer. (Il a {CSGO} clés)",
-              JA:
-                'ボットには、送信するのに十分なキーがありません。（彼は{CSGO}キーを持っています）',
-              DE:
-                'Der Bot hat nicht genug Schlüssel zum Senden. (Er hat {CSGO} Schlüssel)',
+              JA: 'ボットには、送信するのに十分なキーがありません。（彼は{CSGO}キーを持っています）',
+              DE: 'Der Bot hat nicht genug Schlüssel zum Senden. (Er hat {CSGO} Schlüssel)',
             },
           },
           THEM: {
@@ -1885,19 +1621,13 @@ module.exports = {
             },
             1: {
               EN: "You don't have enough keys to send. (You have {CSGO} keys)",
-              PT:
-                'Você não tem chaves suficientes para enviar. (Você tem {CSGO} chaves)',
-              RU:
-                'У вас недостаточно ключей для отправки. (У вас есть {CSGO} ключей)',
-              ES:
-                'No tiene suficientes llaves para enviar. (Tú tienes {CSGO} llaves)',
+              PT: 'Você não tem chaves suficientes para enviar. (Você tem {CSGO} chaves)',
+              RU: 'У вас недостаточно ключей для отправки. (У вас есть {CSGO} ключей)',
+              ES: 'No tiene suficientes llaves para enviar. (Tú tienes {CSGO} llaves)',
               CN: '您的钥匙不足，无法发送。 （您有 {CSGO} 钥匙）',
-              FR:
-                "Vous n'avez pas assez de clés à envoyer. (Vous avez {CSGO} clés)",
-              JA:
-                '送信するのに十分なキーがありません。（{CSGO}キーがあります）',
-              DE:
-                'Sie haben nicht genügend Schlüssel zum Senden. (Sie haben {CSGO} Schlüssel)',
+              FR: "Vous n'avez pas assez de clés à envoyer. (Vous avez {CSGO} clés)",
+              JA: '送信するのに十分なキーがありません。（{CSGO}キーがあります）',
+              DE: 'Sie haben nicht genügend Schlüssel zum Senden. (Sie haben {CSGO} Schlüssel)',
             },
           },
         },
@@ -1914,20 +1644,14 @@ module.exports = {
               DE: 'Der Bot hat nicht genügend Schlüssel.',
             },
             1: {
-              EN:
-                "The bot don't have enough keys to send. (He has {HYDRA} keys)",
-              PT:
-                'O bot não tem chaves suficientes para enviar. (Ele tem {HYDRA} chaves)',
-              RU:
-                'У бота недостаточно ключей для отправки. (У него {HYDRA} ключей)',
-              ES:
-                'El bot no tiene suficientes llaves para enviar. (Él tiene {HYDRA} llaves)',
+              EN: "The bot don't have enough keys to send. (He has {HYDRA} keys)",
+              PT: 'O bot não tem chaves suficientes para enviar. (Ele tem {HYDRA} chaves)',
+              RU: 'У бота недостаточно ключей для отправки. (У него {HYDRA} ключей)',
+              ES: 'El bot no tiene suficientes llaves para enviar. (Él tiene {HYDRA} llaves)',
               CN: '该机器人没有足够的钥匙来发送。 （他有 {HYDRA} 把钥匙）',
               FR: "Le bot n'a pas assez de clés à envoyer. (Il a {HYDRA} clés)",
-              JA:
-                'ボットには、送信するのに十分なキーがありません。 （彼は{HYDRA}キーを持っています）',
-              DE:
-                'Der Bot hat nicht genug Schlüssel zum Senden. (Er hat {HYDRA} Schlüssel)',
+              JA: 'ボットには、送信するのに十分なキーがありません。 （彼は{HYDRA}キーを持っています）',
+              DE: 'Der Bot hat nicht genug Schlüssel zum Senden. (Er hat {HYDRA} Schlüssel)',
             },
           },
           THEM: {
@@ -1943,19 +1667,13 @@ module.exports = {
             },
             1: {
               EN: "You don't have enough keys to send. (You have {HYDRA} keys)",
-              PT:
-                'Você não tem chaves suficientes para enviar. (Você tem {HYDRA} chaves)',
-              RU:
-                'У вас недостаточно ключей для отправки. (У вас есть {HYDRA} ключей)',
-              ES:
-                'No tiene suficientes llaves para enviar. (Tú tienes {HYDRA} llaves)',
+              PT: 'Você não tem chaves suficientes para enviar. (Você tem {HYDRA} chaves)',
+              RU: 'У вас недостаточно ключей для отправки. (У вас есть {HYDRA} ключей)',
+              ES: 'No tiene suficientes llaves para enviar. (Tú tienes {HYDRA} llaves)',
               CN: '您的钥匙不足，无法发送。 （您有 {HYDRA} 钥匙）',
-              FR:
-                "Vous n'avez pas assez de clés à envoyer. (Vous avez {HYDRA} clés)",
-              JA:
-                '送信するのに十分なキーがありません。 （{HYDRA}キーがあります）',
-              DE:
-                'Sie haben nicht genügend Schlüssel zum Senden. (Sie haben {HYDRA} Schlüssel)',
+              FR: "Vous n'avez pas assez de clés à envoyer. (Vous avez {HYDRA} clés)",
+              JA: '送信するのに十分なキーがありません。 （{HYDRA}キーがあります）',
+              DE: 'Sie haben nicht genügend Schlüssel zum Senden. (Sie haben {HYDRA} Schlüssel)',
             },
           },
         },
@@ -1973,18 +1691,13 @@ module.exports = {
             },
             1: {
               EN: "The bot don't have enough keys to send. (He has {TF} keys)",
-              PT:
-                'O bot não tem chaves suficientes para enviar. (Ele tem {TF} chaves)',
-              RU:
-                'У бота недостаточно ключей для отправки. (У него {TF} ключей)',
-              ES:
-                'El bot no tiene suficientes llaves para enviar. (Él tiene {TF} llaves)',
+              PT: 'O bot não tem chaves suficientes para enviar. (Ele tem {TF} chaves)',
+              RU: 'У бота недостаточно ключей для отправки. (У него {TF} ключей)',
+              ES: 'El bot no tiene suficientes llaves para enviar. (Él tiene {TF} llaves)',
               CN: '该机器人没有足够的钥匙来发送。 （他有 {TF} 把钥匙）',
               FR: "Le bot n'a pas assez de clés à envoyer. (Il a {TF} clés)",
-              JA:
-                'ボットには、送信するのに十分なキーがありません。 （彼は{TF}キーを持っています）',
-              DE:
-                'Der Bot hat nicht genug Schlüssel zum Senden. (Er hat {TF} Schlüssel)',
+              JA: 'ボットには、送信するのに十分なキーがありません。 （彼は{TF}キーを持っています）',
+              DE: 'Der Bot hat nicht genug Schlüssel zum Senden. (Er hat {TF} Schlüssel)',
             },
           },
           THEM: {
@@ -2000,18 +1713,13 @@ module.exports = {
             },
             1: {
               EN: "You don't have enough keys to send. (You have {TF} keys)",
-              PT:
-                'Você não tem chaves suficientes para enviar. (Você tem {TF} chaves)',
-              RU:
-                'У вас недостаточно ключей для отправки. (У вас есть {TF} ключей)',
-              ES:
-                'No tiene suficientes llaves para enviar. (Tú tienes {TF} llaves)',
+              PT: 'Você não tem chaves suficientes para enviar. (Você tem {TF} chaves)',
+              RU: 'У вас недостаточно ключей для отправки. (У вас есть {TF} ключей)',
+              ES: 'No tiene suficientes llaves para enviar. (Tú tienes {TF} llaves)',
               CN: '您的钥匙不足，无法发送。 （您有 {TF} 钥匙）',
-              FR:
-                "Vous n'avez pas assez de clés à envoyer. (Vous avez {TF} clés)",
+              FR: "Vous n'avez pas assez de clés à envoyer. (Vous avez {TF} clés)",
               JA: '送信するのに十分なキーがありません。 （{TF}キーがあります）',
-              DE:
-                'Sie haben nicht genügend Schlüssel zum Senden. (Sie haben {TF} Schlüssel)',
+              DE: 'Sie haben nicht genügend Schlüssel zum Senden. (Sie haben {TF} Schlüssel)',
             },
           },
         },
@@ -2028,37 +1736,24 @@ module.exports = {
               DE: 'Der Bot hat nicht genug Edelsteine.',
             },
             1: {
-              EN:
-                "The bot don't have enough gems to send. (He has {GEMS} gems)",
-              PT:
-                'O bot não tem gemas suficientes para enviar. (Ele tem {GEMS} gemas)',
-              RU:
-                'Боту не хватает самоцветы для отправки. (У него есть {GEMS} самоцветы)',
-              ES:
-                'El bot no tiene suficientes gemas para enviar. (Tiene {GEMS} gemas)',
+              EN: "The bot don't have enough gems to send. (He has {GEMS} gems)",
+              PT: 'O bot não tem gemas suficientes para enviar. (Ele tem {GEMS} gemas)',
+              RU: 'Боту не хватает самоцветы для отправки. (У него есть {GEMS} самоцветы)',
+              ES: 'El bot no tiene suficientes gemas para enviar. (Tiene {GEMS} gemas)',
               CN: '该机器人没有足够的宝石来发送。（他有 {GEMS} 颗宝石）',
-              FR:
-                "Le bot n'a pas assez de gemmes à envoyer. (Il a {GEMS} gemmes)",
-              JA:
-                'ボットには送信するのに十分な宝石がありません。（彼は{GEMS}の宝石を持っています）',
-              DE:
-                'Der Bot hat nicht genug Edelsteine zum Senden. (Er hat {GEMS} Edelsteine)',
+              FR: "Le bot n'a pas assez de gemmes à envoyer. (Il a {GEMS} gemmes)",
+              JA: 'ボットには送信するのに十分な宝石がありません。（彼は{GEMS}の宝石を持っています）',
+              DE: 'Der Bot hat nicht genug Edelsteine zum Senden. (Er hat {GEMS} Edelsteine)',
             },
             2: {
               EN: 'The bot is currently out of stock. Please try again later',
-              PT:
-                'O bot está sem estoque no momento. Por favor, tente novamente mais tarde.',
-              RU:
-                'На данный момент бота нет в наличии. Пожалуйста, попробуйте позже',
-              ES:
-                'El bot está actualmente agotado. Por favor, inténtelo de nuevo más tarde',
+              PT: 'O bot está sem estoque no momento. Por favor, tente novamente mais tarde.',
+              RU: 'На данный момент бота нет в наличии. Пожалуйста, попробуйте позже',
+              ES: 'El bot está actualmente agotado. Por favor, inténtelo de nuevo más tarde',
               CN: '该机器人目前无货。 请稍后再试',
-              FR:
-                'Le bot est actuellement en rupture de stock. Veuillez réessayer plus tard',
-              JA:
-                'ボットは現在在庫がありません。 後でもう一度やり直してください',
-              DE:
-                'Der Bot ist derzeit nicht vorrätig. Bitte versuchen Sie es später noch einmal',
+              FR: 'Le bot est actuellement en rupture de stock. Veuillez réessayer plus tard',
+              JA: 'ボットは現在在庫がありません。 後でもう一度やり直してください',
+              DE: 'Der Bot ist derzeit nicht vorrätig. Bitte versuchen Sie es später noch einmal',
             },
           },
           THEM: {
@@ -2074,19 +1769,13 @@ module.exports = {
             },
             1: {
               EN: "You don't have enough gems to send. (You have {GEMS} gems)",
-              PT:
-                'Você não tem gemas suficientes para enviar. (Você tem {GEMS} gemas)',
-              RU:
-                'У вас недостаточно самоцветы для отправки. (У вас есть {GEMS} самоцветы)',
-              ES:
-                'No tienes suficientes gemas para enviar. (Tienes {GEMS} gemas)',
+              PT: 'Você não tem gemas suficientes para enviar. (Você tem {GEMS} gemas)',
+              RU: 'У вас недостаточно самоцветы для отправки. (У вас есть {GEMS} самоцветы)',
+              ES: 'No tienes suficientes gemas para enviar. (Tienes {GEMS} gemas)',
               CN: '您没有足够的宝石来发送。（您有 {GEMS} 颗宝石）',
-              FR:
-                "Vous n'avez pas assez de gemmes à envoyer. (Vous avez {GEMS} gemmes)",
-              JA:
-                '送信するのに十分な宝石がありません。（あなたは{GEMS}の宝石を持っています）',
-              DE:
-                'Sie haben nicht genug Edelsteine zum Senden. (Du hast {GEMS} Edelsteine)',
+              FR: "Vous n'avez pas assez de gemmes à envoyer. (Vous avez {GEMS} gemmes)",
+              JA: '送信するのに十分な宝石がありません。（あなたは{GEMS}の宝石を持っています）',
+              DE: 'Sie haben nicht genug Edelsteine zum Senden. (Du hast {GEMS} Edelsteine)',
             },
           },
         },
@@ -2094,74 +1783,45 @@ module.exports = {
     },
     LOADINVENTORY: {
       US: {
-        EN:
-          "An error occurred while loading the bot's inventory. Please try later.",
-        PT:
-          'Ocorreu um erro ao carregar o inventário do bot. Por favor, tente mais tarde.',
-        RU:
-          'Произошла ошибка при загрузке инвентаря бота. Пожалуйста, попробуйте позднее.',
-        ES:
-          'Se produjo un error al cargar el inventario del bot. Por favor intente mas tarde.',
+        EN: "An error occurred while loading the bot's inventory. Please try later.",
+        PT: 'Ocorreu um erro ao carregar o inventário do bot. Por favor, tente mais tarde.',
+        RU: 'Произошла ошибка при загрузке инвентаря бота. Пожалуйста, попробуйте позднее.',
+        ES: 'Se produjo un error al cargar el inventario del bot. Por favor intente mas tarde.',
         CN: '加载机器人的库存时发生错误。请稍后再试。',
-        FR:
-          "Une erreur s'est produite lors du chargement de l'inventaire du bot. Merci d'essayer plus tard.",
-        JA:
-          'ボットのインベントリの読み込み中にエラーが発生しました。 後でお試しください。',
-        DE:
-          'Beim Laden des Bot-Inventars ist ein Fehler aufgetreten. Bitte versuch es später.',
+        FR: "Une erreur s'est produite lors du chargement de l'inventaire du bot. Merci d'essayer plus tard.",
+        JA: 'ボットのインベントリの読み込み中にエラーが発生しました。 後でお試しください。',
+        DE: 'Beim Laden des Bot-Inventars ist ein Fehler aufgetreten. Bitte versuch es später.',
       },
       THEM: {
         0: {
-          EN:
-            'An error occurred while loading your inventory. Please try later',
-          PT:
-            'Ocorreu um erro ao carregar seu inventário. Por favor, tente mais tarde',
-          RU:
-            'Произошла ошибка при загрузке вашего инвентаря. Пожалуйста, попробуйте позднее',
-          ES:
-            'Se produjo un error al cargar su inventario. Por favor intente mas tarde',
+          EN: 'An error occurred while loading your inventory. Please try later',
+          PT: 'Ocorreu um erro ao carregar seu inventário. Por favor, tente mais tarde',
+          RU: 'Произошла ошибка при загрузке вашего инвентаря. Пожалуйста, попробуйте позднее',
+          ES: 'Se produjo un error al cargar su inventario. Por favor intente mas tarde',
           CN: '加载库存时发生错误。 请稍后再试',
-          FR:
-            "Une erreur s'est produite lors du chargement de votre inventaire. Merci d'essayer plus tard",
-          JA:
-            'インベントリの読み込み中にエラーが発生しました。 後でお試しください',
-          DE:
-            'Beim Laden Ihres Inventars ist ein Fehler aufgetreten. Bitte versuch es später',
+          FR: "Une erreur s'est produite lors du chargement de votre inventaire. Merci d'essayer plus tard",
+          JA: 'インベントリの読み込み中にエラーが発生しました。 後でお試しください',
+          DE: 'Beim Laden Ihres Inventars ist ein Fehler aufgetreten. Bitte versuch es später',
         },
         1: {
-          EN:
-            'An error occurred while loading user inventory. Please try later',
-          PT:
-            'Ocorreu um erro ao carregar o inventário do usuário. Por favor, tente mais tarde',
-          RU:
-            'Произошла ошибка при загрузке пользовательского инвентаря. Пожалуйста, попробуйте позднее',
-          ES:
-            'Se produjo un error al cargar el inventario del usuario. Por favor intente mas tarde',
+          EN: 'An error occurred while loading user inventory. Please try later',
+          PT: 'Ocorreu um erro ao carregar o inventário do usuário. Por favor, tente mais tarde',
+          RU: 'Произошла ошибка при загрузке пользовательского инвентаря. Пожалуйста, попробуйте позднее',
+          ES: 'Se produjo un error al cargar el inventario del usuario. Por favor intente mas tarde',
           CN: '加载用户库存时发生错误。 请稍后再试',
-          FR:
-            "Une erreur s'est produite lors du chargement de l'inventaire utilisateur. Merci d'essayer plus tard",
-          JA:
-            'ユーザーインベントリの読み込み中にエラーが発生しました。 後でお試しください',
-          DE:
-            'Beim Laden des Benutzerinventars ist ein Fehler aufgetreten. Bitte versuch es später',
+          FR: "Une erreur s'est produite lors du chargement de l'inventaire utilisateur. Merci d'essayer plus tard",
+          JA: 'ユーザーインベントリの読み込み中にエラーが発生しました。 後でお試しください',
+          DE: 'Beim Laden des Benutzerinventars ist ein Fehler aufgetreten. Bitte versuch es später',
         },
         2: {
-          EN:
-            'There was an error loading your inventory as it is private. Set your profile to public and try again',
-          PT:
-            'Ocorreu um erro ao carregar seu inventário, pois é privado. Defina seu perfil como público e tente novamente',
-          RU:
-            'При загрузке вашего инвентаря произошла ошибка, поскольку он является частным. Установите свой профиль на общедоступный и попробуйте снова',
-          ES:
-            'Se produjo un error al cargar su inventario, ya que es privado. Configura tu perfil como público y vuelve a intentarlo',
-          CN:
-            '由于您的库存是私人的，因此加载时出错。 将您的个人资料设为公开，然后重试',
-          FR:
-            "Une erreur s'est produite lors du chargement de votre inventaire car il est privé. Définissez votre profil comme public et réessayez",
-          JA:
-            'プライベートであるため、インベントリの読み込み中にエラーが発生しました。 プロフィールを公開に設定して、もう一度お試しください',
-          DE:
-            'Beim Laden Ihres Inventars ist ein Fehler aufgetreten, da es privat ist. Setzen Sie Ihr Profil auf öffentlich und versuchen Sie es erneut',
+          EN: 'There was an error loading your inventory as it is private. Set your profile to public and try again',
+          PT: 'Ocorreu um erro ao carregar seu inventário, pois é privado. Defina seu perfil como público e tente novamente',
+          RU: 'При загрузке вашего инвентаря произошла ошибка, поскольку он является частным. Установите свой профиль на общедоступный и попробуйте снова',
+          ES: 'Se produjo un error al cargar su inventario, ya que es privado. Configura tu perfil como público y vuelve a intentarlo',
+          CN: '由于您的库存是私人的，因此加载时出错。 将您的个人资料设为公开，然后重试',
+          FR: "Une erreur s'est produite lors du chargement de votre inventaire car il est privé. Définissez votre profil comme public et réessayez",
+          JA: 'プライベートであるため、インベントリの読み込み中にエラーが発生しました。 プロフィールを公開に設定して、もう一度お試しください',
+          DE: 'Beim Laden Ihres Inventars ist ein Fehler aufgetreten, da es privat ist. Setzen Sie Ihr Profil auf öffentlich und versuchen Sie es erneut',
         },
       },
     },
