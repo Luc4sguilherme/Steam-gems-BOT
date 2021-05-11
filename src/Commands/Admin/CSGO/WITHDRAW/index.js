@@ -6,30 +6,22 @@ const messages = require('../../../../Config/messages');
 const utils = require('../../../../Utils');
 
 module.exports = (sender, msg, client, users, manager) => {
+  const language = utils.getLanguage(sender.getSteamID64(), users);
   const amountkeys = parseInt(
     msg.toUpperCase().replace('!WITHDRAWCSGO ', ''),
     10
   );
+
   if (!Number.isNaN(amountkeys) && parseInt(amountkeys, 10) > 0) {
     log.adminChat(
       sender.getSteamID64(),
-      utils.getLanguage(sender.getSteamID64(), users),
+      language,
       `[ !WITHDRAWCSGO ${amountkeys} ]`
     );
-    chatMessage(
-      client,
-      sender,
-      messages.REQUEST[utils.getLanguage(sender.getSteamID64(), users)]
-    );
+    chatMessage(client, sender, messages.REQUEST[language]);
     manager.getInventoryContents(730, 2, true, (ERR, INV) => {
       if (ERR) {
-        chatMessage(
-          client,
-          sender,
-          messages.ERROR.LOADINVENTORY.US[
-            utils.getLanguage(sender.getSteamID64(), users)
-          ]
-        );
+        chatMessage(client, sender, messages.ERROR.LOADINVENTORY.US[language]);
         log.error(`An error occurred while getting inventory: ${ERR}`);
       } else {
         let botkeys = 0;
@@ -48,14 +40,16 @@ module.exports = (sender, msg, client, users, manager) => {
           chatMessage(
             client,
             sender,
-            messages.ERROR.OUTOFSTOCK.DEFAULT.CSGO.US[1][
-              utils.getLanguage(sender.getSteamID64(), users)
-            ].replace('{CSGO}', botkeys)
+            messages.ERROR.OUTOFSTOCK.DEFAULT.CSGO.US[1][language].replace(
+              '{CSGO}',
+              botkeys
+            )
           );
         } else {
-          const message = messages.TRADE.SETMESSAGE[0].CSGO[
-            utils.getLanguage(sender.getSteamID64(), users)
-          ].replace('{CSGO}', amountkeys);
+          const message = messages.TRADE.SETMESSAGE[0].CSGO[language].replace(
+            '{CSGO}',
+            amountkeys
+          );
           makeOffer(
             client,
             users,
@@ -75,9 +69,10 @@ module.exports = (sender, msg, client, users, manager) => {
     chatMessage(
       client,
       sender,
-      messages.ERROR.INPUT.INVALID.CSGO[
-        utils.getLanguage(sender.getSteamID64(), users)
-      ].replace('{command}', '!WITHDRAWCSGO 1')
+      messages.ERROR.INPUT.INVALID.CSGO[language].replace(
+        '{command}',
+        '!WITHDRAWCSGO 1'
+      )
     );
   }
 };

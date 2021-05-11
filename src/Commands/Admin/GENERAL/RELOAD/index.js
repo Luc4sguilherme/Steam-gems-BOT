@@ -6,6 +6,7 @@ const messages = require('../../../../Config/messages');
 const utils = require('../../../../Utils');
 
 module.exports = (sender, client, users, community) => {
+  const language = utils.getLanguage(sender.getSteamID64(), users);
   const load = ['GEMS'];
 
   Object.keys(main.acceptedCurrencies).forEach((currency) => {
@@ -18,22 +19,10 @@ module.exports = (sender, client, users, community) => {
     }
   });
 
-  chatMessage(
-    client,
-    sender,
-    messages.REQUEST[utils.getLanguage(sender.getSteamID64(), users)]
-  );
-  log.adminChat(
-    sender.getSteamID64(),
-    utils.getLanguage(sender.getSteamID64(), users),
-    '[ !RELOAD ]'
-  );
+  chatMessage(client, sender, messages.REQUEST[language]);
+  log.adminChat(sender.getSteamID64(), language, '[ !RELOAD ]');
   inventory.loadInventory(client, community, load, () => {
     inventory.play(client);
-    chatMessage(
-      client,
-      sender,
-      messages.RELOAD[utils.getLanguage(sender.getSteamID64(), users)]
-    );
+    chatMessage(client, sender, messages.RELOAD[language]);
   });
 };

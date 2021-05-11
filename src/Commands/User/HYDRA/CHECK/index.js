@@ -6,18 +6,16 @@ const rates = require('../../../../Config/rates');
 const utils = require('../../../../Utils');
 
 module.exports = (sender, msg, client, users) => {
+  const language = utils.getLanguage(sender.getSteamID64(), users);
   const n = parseInt(msg.toUpperCase().replace('!CHECKHYDRA ', ''), 10);
+
   if (!Number.isNaN(n) && parseInt(n, 10) > 0) {
-    log.userChat(
-      sender.getSteamID64(),
-      utils.getLanguage(sender.getSteamID64(), users),
-      `[ !CHECKHYDRA ${n} ]`
-    );
+    log.userChat(sender.getSteamID64(), language, `[ !CHECKHYDRA ${n} ]`);
     if (main.maxCheck.hydra >= n) {
       chatMessage(
         client,
         sender,
-        messages.CHECK.HYDRA[utils.getLanguage(sender.getSteamID64(), users)]
+        messages.CHECK.HYDRA[language]
           .replace(/{HYDRA}/g, n)
           .replace('{GEMS}', n * rates.hydra.sell)
       );
@@ -25,18 +23,20 @@ module.exports = (sender, msg, client, users) => {
       chatMessage(
         client,
         sender,
-        messages.ERROR.INPUT.AMOUNTOVER.HYDRA[
-          utils.getLanguage(sender.getSteamID64(), users)
-        ].replace('{KEYS}', main.maxCheck.hydra)
+        messages.ERROR.INPUT.AMOUNTOVER.HYDRA[language].replace(
+          '{KEYS}',
+          main.maxCheck.hydra
+        )
       );
     }
   } else {
     chatMessage(
       client,
       sender,
-      messages.ERROR.INPUT.INVALID.HYDRA[
-        utils.getLanguage(sender.getSteamID64(), users)
-      ].replace('{command}', '!CHECKHYDRA 1')
+      messages.ERROR.INPUT.INVALID.HYDRA[language].replace(
+        '{command}',
+        '!CHECKHYDRA 1'
+      )
     );
   }
 };

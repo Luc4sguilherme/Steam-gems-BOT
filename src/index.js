@@ -235,16 +235,14 @@ client.on('friendMessage', (SENDER, MSG) => {
   }
 
   // User Messages
+  const language = utils.getLanguage(SENDER.getSteamID64(), users);
+
   if (client.myFriends[SENDER.getSteamID64()] === 5) {
     chatMessage(client, SENDER, 'You have been banned from using our services');
   } else if (client.myFriends[SENDER.getSteamID64()] === undefined) {
     chatMessage(client, SENDER, 'You need to add me as a friend');
   } else if (MSG.indexOf('[/tradeoffer]') >= 0) {
-    chatMessage(
-      client,
-      SENDER,
-      messages.REQUEST[utils.getLanguage(SENDER.getSteamID64(), users)]
-    );
+    chatMessage(client, SENDER, messages.REQUEST[language]);
     // this fix an error when the bot receives a donation
   } else if (
     inventory.loading &&
@@ -257,11 +255,7 @@ client.on('friendMessage', (SENDER, MSG) => {
       MSG.toUpperCase().search(/RESTOCK/) !== -1 ||
       MSG.toUpperCase().search(/RELOAD/) !== -1)
   ) {
-    chatMessage(
-      client,
-      SENDER,
-      messages.LOADING[utils.getLanguage(SENDER.getSteamID64(), users)]
-    );
+    chatMessage(client, SENDER, messages.LOADING[language]);
   } else {
     commands(SENDER, MSG, client, users, community, manager);
   }
@@ -300,8 +294,7 @@ client.on('friendRelationship', (SENDER, REL) => {
       }
     });
 
-    const language =
-      users[SENDER.getSteamID64()]?.language || getDefaultLanguage();
+    const language = utils.getLanguage(SENDER.getSteamID64(), users);
 
     let message = messages.WELCOME[language];
 
@@ -315,6 +308,8 @@ client.on('friendRelationship', (SENDER, REL) => {
 
 // If the offer changes the state (example: Offer is created (1), confirmed (2) and the status changes to accepted (3) or declined (4).)
 manager.on('sentOfferChanged', (OFFER) => {
+  const language = utils.getLanguage(OFFER.partner.getSteamID64(), users);
+
   if (OFFER.state === 2) {
     // chatMessage(client, OFFER.partner, "Your trade has been confirmed! Click here to accept it: https://www.steamcommunity.com/tradeoffer/" + OFFER.id);
     log.tradeoffer(
@@ -371,9 +366,7 @@ manager.on('sentOfferChanged', (OFFER) => {
         }
         if (canComment && main.comment.enabled) {
           USER.comment(
-            messages.COMMENT[
-              utils.getLanguage(OFFER.partner.getSteamID64(), users)
-            ],
+            messages.COMMENT[language],
 
             (ERR1) => {
               if (ERR1) {
@@ -414,26 +407,23 @@ manager.on('sentOfferChanged', (OFFER) => {
                 chatMessage(
                   client,
                   OFFER.partner.getSteamID64(),
-                  messages.TRADE.DONE[0][
-                    utils.getLanguage(OFFER.partner.getSteamID64(), users)
-                  ].replace('{GROUP}', main.steamGroup.link)
+                  messages.TRADE.DONE[0][language].replace(
+                    '{GROUP}',
+                    main.steamGroup.link
+                  )
                 );
               } else {
                 chatMessage(
                   client,
                   OFFER.partner.getSteamID64(),
-                  messages.TRADE.DONE[1][
-                    utils.getLanguage(OFFER.partner.getSteamID64(), users)
-                  ]
+                  messages.TRADE.DONE[1][language]
                 );
               }
             } else {
               chatMessage(
                 client,
                 OFFER.partner.getSteamID64(),
-                messages.TRADE.DONE[1][
-                  utils.getLanguage(OFFER.partner.getSteamID64(), users)
-                ]
+                messages.TRADE.DONE[1][language]
               );
               log.error(
                 `An error occurred inviting user to steam group: ${err}`
@@ -447,18 +437,14 @@ manager.on('sentOfferChanged', (OFFER) => {
     chatMessage(
       client,
       OFFER.partner,
-      messages.TRADE.COUNTEROFFER[
-        utils.getLanguage(OFFER.partner.getSteamID64(), users)
-      ].replace('{OFFERID}', OFFER.id)
+      messages.TRADE.COUNTEROFFER[language].replace('{OFFERID}', OFFER.id)
     );
     log.tradeoffer(`Aborted because of counter offer. TradeID:${OFFER.id}`);
   } else if (OFFER.state === 5) {
     chatMessage(
       client,
       OFFER.partner,
-      messages.TRADE.EXPIRED[0][
-        utils.getLanguage(OFFER.partner.getSteamID64(), users)
-      ].replace('{OFFERID}', OFFER.id)
+      messages.TRADE.EXPIRED[0][language].replace('{OFFERID}', OFFER.id)
     );
     log.tradeoffer(`Tradeoffer expired. TradeID:${OFFER.id}`);
   } else if (OFFER.state === 6) {
@@ -473,9 +459,7 @@ manager.on('sentOfferChanged', (OFFER) => {
       chatMessage(
         client,
         OFFER.partner,
-        messages.TRADE.EXPIRED[1][
-          utils.getLanguage(OFFER.partner.getSteamID64(), users)
-        ].replace('{OFFERID}', OFFER.id)
+        messages.TRADE.EXPIRED[1][language].replace('{OFFERID}', OFFER.id)
       );
 
       log.tradeoffer(
@@ -485,9 +469,7 @@ manager.on('sentOfferChanged', (OFFER) => {
       chatMessage(
         client,
         OFFER.partner,
-        messages.TRADE.CANCELED[
-          utils.getLanguage(OFFER.partner.getSteamID64(), users)
-        ].replace('{OFFERID}', OFFER.id)
+        messages.TRADE.CANCELED[language].replace('{OFFERID}', OFFER.id)
       );
       log.tradeoffer(`Trade offer canceled by Bot. TradeID:${OFFER.id}`);
     } else {
@@ -497,18 +479,14 @@ manager.on('sentOfferChanged', (OFFER) => {
     chatMessage(
       client,
       OFFER.partner,
-      messages.TRADE.DECLINED.THEM[
-        utils.getLanguage(OFFER.partner.getSteamID64(), users)
-      ].replace('{OFFERID}', OFFER.id)
+      messages.TRADE.DECLINED.THEM[language].replace('{OFFERID}', OFFER.id)
     );
     log.tradeoffer(`Tradeoffer declined by User. TradeID:${OFFER.id}`);
   } else if (OFFER.state === 8) {
     chatMessage(
       client,
       OFFER.partner,
-      messages.TRADE.DECLINED.US[1][
-        utils.getLanguage(OFFER.partner.getSteamID64(), users)
-      ].replace('{OFFERID}', OFFER.id)
+      messages.TRADE.DECLINED.US[1][language].replace('{OFFERID}', OFFER.id)
     );
     log.tradeoffer(
       `Tradeoffer canceled by Bot (items unavailable). TradeID:${OFFER.id}`
@@ -517,9 +495,7 @@ manager.on('sentOfferChanged', (OFFER) => {
     chatMessage(
       client,
       OFFER.partner,
-      messages.TRADE.ESCROW[
-        utils.getLanguage(OFFER.partner.getSteamID64(), users)
-      ].replace('{OFFERID}', OFFER.id)
+      messages.TRADE.ESCROW[language].replace('{OFFERID}', OFFER.id)
     );
     log.tradeoffer(
       `Tradeoffer aborted because user is in escrow and can't trade. TradeID:${OFFER.id}`
@@ -529,17 +505,13 @@ manager.on('sentOfferChanged', (OFFER) => {
 
 // If we get a new offer and no error we check the escrow, if we and our partner are able to trade and WE dont send any items to the user we have a donation and accept it.
 manager.on('newOffer', (OFFER) => {
+  const language = utils.getLanguage(OFFER.partner.getSteamID64(), users);
+
   if (main.admins.includes(OFFER.partner.getSteamID64())) {
     OFFER.getUserDetails((ERR1, ME, THEM) => {
       if (ERR1) {
         log.error(`An error occurred while getting trade holds: ${ERR1}`);
-        chatMessage(
-          client,
-          OFFER.partner,
-          messages.ERROR.TRADEHOLD[
-            utils.getLanguage(OFFER.partner.getSteamID64(), users)
-          ]
-        );
+        chatMessage(client, OFFER.partner, messages.ERROR.TRADEHOLD[language]);
         OFFER.decline((ERR2) => {
           if (ERR2) {
             log.error(`An error occurred while declining trade: ${ERR2}`);
@@ -558,20 +530,12 @@ manager.on('newOffer', (OFFER) => {
             chatMessage(
               client,
               OFFER.partner,
-              messages.TRADE.ACCEPTED[
-                utils.getLanguage(OFFER.partner.getSteamID64(), users)
-              ]
+              messages.TRADE.ACCEPTED[language]
             );
           }
         });
       } else {
-        chatMessage(
-          client,
-          OFFER.partner,
-          messages.TRADEHOLD[
-            utils.getLanguage(OFFER.partner.getSteamID64(), users)
-          ]
-        );
+        chatMessage(client, OFFER.partner, messages.TRADEHOLD[language]);
         OFFER.decline((ERR5) => {
           if (ERR5) {
             log.error(`An error occurred while declining trade: ${ERR5}`);
@@ -598,9 +562,7 @@ manager.on('newOffer', (OFFER) => {
           chatMessage(
             client,
             OFFER.partner,
-            messages.TRADE.DONATION.ACCEPTED[
-              utils.getLanguage(OFFER.partner.getSteamID64(), users)
-            ]
+            messages.TRADE.DONATION.ACCEPTED[language]
           );
         }
       });
@@ -613,9 +575,7 @@ manager.on('newOffer', (OFFER) => {
       chatMessage(
         client,
         OFFER.partner,
-        messages.TRADE.DONATION.DECLINED[
-          utils.getLanguage(OFFER.partner.getSteamID64(), users)
-        ]
+        messages.TRADE.DONATION.DECLINED[language]
       );
     }
   } else {
@@ -626,9 +586,7 @@ manager.on('newOffer', (OFFER) => {
       chatMessage(
         client,
         OFFER.partner,
-        messages.TRADE.DECLINED.US[0][
-          utils.getLanguage(OFFER.partner.getSteamID64(), users)
-        ]
+        messages.TRADE.DECLINED.US[0][language]
       );
     });
   }

@@ -6,18 +6,16 @@ const rates = require('../../../../Config/rates');
 const utils = require('../../../../Utils');
 
 module.exports = (sender, msg, client, users) => {
+  const language = utils.getLanguage(sender.getSteamID64(), users);
   const n = parseInt(msg.toUpperCase().replace('!CHECKTF ', ''), 10);
+
   if (!Number.isNaN(n) && parseInt(n, 10) > 0) {
-    log.userChat(
-      sender.getSteamID64(),
-      utils.getLanguage(sender.getSteamID64(), users),
-      `[ !CHECKTF ${n} ]`
-    );
+    log.userChat(sender.getSteamID64(), language, `[ !CHECKTF ${n} ]`);
     if (main.maxCheck.tf >= n) {
       chatMessage(
         client,
         sender,
-        messages.CHECK.TF[utils.getLanguage(sender.getSteamID64(), users)]
+        messages.CHECK.TF[language]
           .replace(/{TF}/g, n)
           .replace('{GEMS}', n * rates.tf.sell)
       );
@@ -25,18 +23,20 @@ module.exports = (sender, msg, client, users) => {
       chatMessage(
         client,
         sender,
-        messages.ERROR.INPUT.AMOUNTOVER.TF[
-          utils.getLanguage(sender.getSteamID64(), users)
-        ].replace('{KEYS}', main.maxCheck.tf)
+        messages.ERROR.INPUT.AMOUNTOVER.TF[language].replace(
+          '{KEYS}',
+          main.maxCheck.tf
+        )
       );
     }
   } else {
     chatMessage(
       client,
       sender,
-      messages.ERROR.INPUT.INVALID.TF[
-        utils.getLanguage(sender.getSteamID64(), users)
-      ].replace('{command}', '!CHECKTF 1')
+      messages.ERROR.INPUT.INVALID.TF[language].replace(
+        '{command}',
+        '!CHECKTF 1'
+      )
     );
   }
 };

@@ -8,21 +8,19 @@ const utils = require('../../../../Utils');
 const { filterCommands } = require('../../../../Utils');
 
 module.exports = (sender, msg, client, users) => {
+  const language = utils.getLanguage(sender.getSteamID64(), users);
   const m = msg.toUpperCase().replace('!CHECK ', '');
   const n = parseInt(m, 10);
+
   if (!Number.isNaN(n) && parseInt(n, 10) > 0) {
     if (main.maxCheck.csgo >= n) {
-      log.userChat(
-        sender.getSteamID64(),
-        utils.getLanguage(sender.getSteamID64(), users),
-        `[ !CHECK ${n} ]`
-      );
+      log.userChat(sender.getSteamID64(), language, `[ !CHECK ${n} ]`);
 
       chatMessage(
         client,
         sender,
         filterCommands(
-          messages.CHECK.AMOUNT[utils.getLanguage(sender.getSteamID64(), users)]
+          messages.CHECK.AMOUNT[language]
             .replace(/{AMOUNT}/g, n)
             .replace('{CSGOSELL}', n * rates.csgo.sell)
             .replace('{TFSELL}', n * rates.tf.sell)
@@ -33,23 +31,16 @@ module.exports = (sender, msg, client, users) => {
       chatMessage(
         client,
         sender,
-        messages.ERROR.INPUT.AMOUNTOVER.CSGO[
-          utils.getLanguage(sender.getSteamID64(), users)
-        ].replace('{KEYS}', main.maxCheck.csgo)
+        messages.ERROR.INPUT.AMOUNTOVER.CSGO[language].replace(
+          '{KEYS}',
+          main.maxCheck.csgo
+        )
       );
     }
   } else if (m === '!CHECK') {
     if (inventory.stock.gemsQuantity.tradable > 0) {
-      log.userChat(
-        sender.getSteamID64(),
-        utils.getLanguage(sender.getSteamID64(), users),
-        '[ !CHECK ]'
-      );
-      chatMessage(
-        client,
-        sender,
-        messages.REQUEST[utils.getLanguage(sender.getSteamID64(), users)]
-      );
+      log.userChat(sender.getSteamID64(), language, '[ !CHECK ]');
+      chatMessage(client, sender, messages.REQUEST[language]);
 
       const stock = inventory.stock.gemsQuantity.tradable;
 
@@ -59,23 +50,17 @@ module.exports = (sender, msg, client, users) => {
 
       let message = ' ';
       if (cs > 0) {
-        message += messages.CHECK.DEFAULT.CURRENCIES.CSGO[
-          utils.getLanguage(sender.getSteamID64(), users)
-        ]
+        message += messages.CHECK.DEFAULT.CURRENCIES.CSGO[language]
           .replace(/{CSGO}/g, cs)
           .replace('{GEMS1}', cs * rates.csgo.sell);
       }
       if (hydra > 0) {
-        message += messages.CHECK.DEFAULT.CURRENCIES.HYDRA[
-          utils.getLanguage(sender.getSteamID64(), users)
-        ]
+        message += messages.CHECK.DEFAULT.CURRENCIES.HYDRA[language]
           .replace(/{HYDRA}/g, hydra)
           .replace('{GEMS2}', hydra * rates.hydra.sell);
       }
       if (tf > 0) {
-        message += messages.CHECK.DEFAULT.CURRENCIES.TF[
-          utils.getLanguage(sender.getSteamID64(), users)
-        ]
+        message += messages.CHECK.DEFAULT.CURRENCIES.TF[language]
           .replace(/{TF}/g, tf)
           .replace('{GEMS3}', tf * rates.tf.sell);
       }
@@ -86,9 +71,7 @@ module.exports = (sender, msg, client, users) => {
         chatMessage(
           client,
           sender,
-          messages.ERROR.OUTOFSTOCK.DEFAULT.GEMS.US[2][
-            utils.getLanguage(sender.getSteamID64(), users)
-          ]
+          messages.ERROR.OUTOFSTOCK.DEFAULT.GEMS.US[2][language]
         );
         return;
       }
@@ -96,9 +79,7 @@ module.exports = (sender, msg, client, users) => {
       chatMessage(
         client,
         sender,
-        messages.CHECK.DEFAULT.RESPONSE[
-          utils.getLanguage(sender.getSteamID64(), users)
-        ]
+        messages.CHECK.DEFAULT.RESPONSE[language]
           .replace('{MESSAGE}', message)
           .replace('{GEMS}', stock)
       );
@@ -106,18 +87,10 @@ module.exports = (sender, msg, client, users) => {
       chatMessage(
         client,
         sender,
-        messages.ERROR.OUTOFSTOCK.DEFAULT.GEMS.US[2][
-          utils.getLanguage(sender.getSteamID64(), users)
-        ]
+        messages.ERROR.OUTOFSTOCK.DEFAULT.GEMS.US[2][language]
       );
     }
   } else {
-    chatMessage(
-      client,
-      sender,
-      messages.ERROR.INPUT.UNKNOW.CUSTOMER[
-        utils.getLanguage(sender.getSteamID64(), users)
-      ]
-    );
+    chatMessage(client, sender, messages.ERROR.INPUT.UNKNOW.CUSTOMER[language]);
   }
 };
